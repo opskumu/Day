@@ -2,7 +2,8 @@
 
 ## OpenNebula
 
-* `onehost sync --force` [one host sync](http://docs.opennebula.org/4.10/administration/hosts_and_clusters/host_guide.html#sync)
+* `onehost sync --force` 
+    * [OpenNebula host sync](http://docs.opennebula.org/4.10/administration/hosts_and_clusters/host_guide.html#sync)
 * messagebus 服务必须开启，否则添加节点会失败
     * chkconfig messagebus on
     * service messagebus start
