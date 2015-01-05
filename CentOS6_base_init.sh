@@ -13,7 +13,7 @@ sed -i 's/1024/10240/' /etc/security/limits.d/90-nproc.conf
 
 # disable ipv6
 cat >>/etc/sysctl.conf <<EOF
-vm.swappiness = 10
+vm.swappiness = 0
 net.ipv6.conf.all.disable_ipv6 = 1
 net.ipv6.conf.default.disable_ipv6 = 1
 EOF
@@ -29,8 +29,9 @@ sed -i 's/^GSSAPIAuthentication yes$/GSSAPIAuthentication no/' /etc/ssh/sshd_con
 sed -i -c 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/sysconfig/selinux
 
 # service
-service=$(chkconfig --list | grep '3:on' | awk '{print $1}')
-for i in $service
+SERVICE=$(chkconfig --list | grep '3:on' | awk '{print $1}')
+
+for i in $SERVICE
 do
     case $i in
         acpid | crond | irqbalance |  messagebus | network | sshd | rsyslog | udev-post)
