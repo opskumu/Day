@@ -1,6 +1,4 @@
 shell
 =====
 
-Shell Scripts
-
-日常 shell 脚本
+日常 Shell/Python 脚本
