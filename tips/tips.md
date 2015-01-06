@@ -66,6 +66,8 @@ echo 0 > /proc/sys/vm/swappiness
 
 ## 四、MySQL
 
+### mysqldump
+
 ```
 mysqldump --hex-blob --single-transaction --alldatabase --master-data=1 > all.sql
 ```
