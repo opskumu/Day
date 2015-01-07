@@ -68,8 +68,18 @@ echo 0 > /proc/sys/vm/swappiness
 
 ### mysqldump
 
+* 全备
+
 ```
 mysqldump --hex-blob --single-transaction --alldatabase --master-data=1 > all.sql
 ```
 
 Dump binary strings (BINARY, VARBINARY, BLOB) in hexadecimal format (for example, ′abc′ becomes 0x616263). The affected data types are BINARY, VARBINARY, the BLOB types, and BIT.
+
+### mysqlbinlog
+
+* row 格式查看
+
+```
+mysqlbinlog -v -v --base64-output=DECODE-ROWS binlog文件名
+```
