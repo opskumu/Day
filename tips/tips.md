@@ -83,3 +83,34 @@ Dump binary strings (BINARY, VARBINARY, BLOB) in hexadecimal format (for example
 ```
 mysqlbinlog -v -v --base64-output=DECODE-ROWS binlog文件名
 ```
+
+## 五、Nginx
+
+* 域名子目录访问跳转到其它网站
+
+```
+server {
+... ...
+           location ^~ /test/ {
+               rewrite ^/test/(.*) /$1 break;
+               proxy_pass http://www.test.com/;
+           }
+... ...
+}
+```
+
+* 404 页面 301 重定向到主页
+
+```
+server {
+... ...
+           location / {
+               error_page 404 =  @foobar;
+           }
+
+           location @foobar {
+               rewrite  .*  / permanent;
+           }
+... ...
+}
+```
