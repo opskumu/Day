@@ -117,8 +117,10 @@ server {
 
 * Nginx 配置 ip 直接访问的默认站点
 
+```
 server {
     ... ...
     listen 80 default;
     ... ...
 }
+```
