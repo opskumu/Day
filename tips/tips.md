@@ -93,7 +93,7 @@ server {
 ... ...
            location ^~ /test/ {
                rewrite ^/test/(.*) /$1 break;
-               proxy_pass http://www.test.com/;
+               proxy_pass http://www.test.com;
            }
 ... ...
 }
