@@ -124,3 +124,22 @@ server {
     ... ...
 }
 ```
+
+* uwsgi
+
+```
+server {
+    listen   80;
+    server_name www.test.com;
+
+    location / {
+        include uwsgi_params;
+        uwsgi_pass 127.0.0.1:8000;
+    }
+
+    location /static {
+        alias /data/www/project/app/static;
+    }
+    ... ...
+}
+```
