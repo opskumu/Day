@@ -1,0 +1,60 @@
+#!/bin/bash
+#
+# chkconfig: 345 99 1
+# description: uwsgi start script
+# processname: uwsgi
+# pidfile: /var/run/uwsgi.pid
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+NAME=init
+PROGNAME="uwsgi_$NAME"
+PID="/var/run/$NAME.pid"
+RETVAL=0
+
+UWSGI_BIN="/usr/local/bin/uwsgi"
+UWSGI_APP_DIR="/data/www/project_$NAME/uwsgi/"
+UWSGI_APP_INIT="$UWSGI_APP_DIR/$NAME.ini"
+PROG=$UWSGI_BIN
+[ -f $PROG ] || exit 0
+start() {
+        echo -n "Starting $PROGNAME: "
+        [ -f $PID ] && echo "$PROGNAME is running" && exit 0
+        daemon $PROG $UWSGI_APP_INIT --pidfile $PID
+        echo
+        return $RETVAL
+}
+stop() {
+        echo -n "Stopping $PROGNAME: "
+        $PROG --stop $PID 2>/dev/null
+        RETVAL=$?
+        echo
+        [ $RETVAL = 0 ] && rm -f $PID && echo "OK"
+}
+show_status() {
+        status -p $PID $PROGNAME
+}
+reload() {
+    $PROG --reload $PID 2>/dev/null || echo "uwsgi can't reload"
+}
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    reload)
+        reload
+        ;;
+    status)
+        show_status
+        ;;
+    *)
+        echo "Usage: $PROGNAME {start|stop|reload|status}"
+        RETVAL=2
+        ;;
+esac
+exit $RETVAL
