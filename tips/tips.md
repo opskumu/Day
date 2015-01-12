@@ -84,6 +84,20 @@ Dump binary strings (BINARY, VARBINARY, BLOB) in hexadecimal format (for example
 mysqlbinlog -v -v --base64-output=DECODE-ROWS binlog文件名
 ```
 
+* 从库跳过错误日志
+
+```
+mysql> STOP SLAVE;
+mysql> SET GLOBAL SQL_SLAVE_SKIP_COUNTER = 1; # 1 表示跳过 1 个 events
+mysql> START SLAVE;
+```
+
+* 查看当前数据库下的所有表的 ROW_FORMAT
+
+```
+mysql> SELECT `table_name`, `row_format` FROM `information_schema`.`tables` WHERE `table_schema`=DATABASE();
+```
+
 ## 五、Nginx
 
 * 域名子目录访问跳转到其它网站
