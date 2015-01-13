@@ -34,7 +34,7 @@ SERVICE=$(chkconfig --list | grep '3:on' | awk '{print $1}')
 for i in $SERVICE
 do
     case $i in
-        acpid | crond | irqbalance |  messagebus | network | sshd | rsyslog | udev-post)
+        acpid | crond |  messagebus | network | sshd | rsyslog | udev-post)
             chkconfig --level 2345 $i on
         ;;
         *)
