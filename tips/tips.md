@@ -140,6 +140,13 @@ mysql> SELECT `table_name`, `row_format` FROM `information_schema`.`tables` WHER
 mysql> SHOW TABLE STATUS LIKE 'table_name'\G
 ```
 
+### MySQL 读取配置文件顺序
+
+```
+$ mysql --help | grep '/etc/my.cnf' # 相同选项以最后一个配置文件选项为主
+/etc/my.cnf /etc/mysql/my.cnf /usr/local/etc/my.cnf ~/.my.cnf
+```
+
 ## 五、Nginx
 
 * 域名子目录访问跳转到其它网站
