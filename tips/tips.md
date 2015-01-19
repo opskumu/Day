@@ -76,6 +76,40 @@ mysqldump --hex-blob --single-transaction --alldatabase --master-data=1 > all.sq
 
 Dump binary strings (BINARY, VARBINARY, BLOB) in hexadecimal format (for example, ′abc′ becomes 0x616263). The affected data types are BINARY, VARBINARY, the BLOB types, and BIT.
 
+* mysqldump --ignore-database
+
+```
+mysqldump --databases `mysql -uroot --skip-column-names \
+    -e "SELECT GROUP_CONCAT(schema_name SEPARATOR ' ') \
+    FROM information_schema.schemata WHERE schema_name \
+    NOT IN ('mysql','performance_schema','information_schema');"` \
+    > backup.sql
+```
+
+OR
+
+```
+echo '[mysqldump]' > mydump.cnf
+mysql -NBe "select concat('ignore-table=', table_schema, '.', table_name) \
+    from information_schema.tables \
+    where table_schema in ('mysql', 'personnel', 'buildings')" \
+    >> mydump.cnf
+```
+
+Now the options file looks like this:
+
+```
+[mysqldump]
+ignore-table=mysql.db
+ignore-table=mysql.host
+ignore-table=mysql.user
+[...]
+```
+
+```
+mysqldump --defaults-file=./mydump.cnf  -u $DBUSER -p$DBPWD --all-databases
+```
+
 ### mysqlbinlog
 
 * row 格式查看
@@ -84,7 +118,7 @@ Dump binary strings (BINARY, VARBINARY, BLOB) in hexadecimal format (for example
 mysqlbinlog -v -v --base64-output=DECODE-ROWS binlog文件名
 ```
 
-* 从库跳过错误日志
+### 从库跳过错误日志
 
 ```
 mysql> STOP SLAVE;
@@ -92,10 +126,18 @@ mysql> SET GLOBAL SQL_SLAVE_SKIP_COUNTER = 1; # 1 表示跳过 1 个 events
 mysql> START SLAVE;
 ```
 
+### ROW_FORMAT
+
 * 查看当前数据库下的所有表的 ROW_FORMAT
 
 ```
 mysql> SELECT `table_name`, `row_format` FROM `information_schema`.`tables` WHERE `table_schema`=DATABASE();
+```
+
+* 查看指定表 ROW_FORMAT
+
+```
+mysql> SHOW TABLE STATUS LIKE 'table_name'\G
 ```
 
 ## 五、Nginx
