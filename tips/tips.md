@@ -64,6 +64,39 @@ echo 0 > /proc/sys/vm/swappiness
 
 默认值 60，对于服务器这是一个糟糕的默认值，这个值只对笔记本适用。服务器应该设置为 0。
 
+### 桥接
+
+```
+# cat /etc/sysconfig/network-scripts/ifcfg-eth0 
+DEVICE=eth0
+TYPE=Ethernet
+HWADDR=xx:xx:xx:xx:xx:xx
+BOOTPROTO=none
+ONBOOT=yes
+NM_CONTROLLED=no
+BRIDGE=br0
+# cat /etc/sysconfig/network-scripts/ifcfg-br0 
+DEVICE=br0
+TYPE=Bridge
+IPADDR=xx.xx.xx.xx
+NETMASK=xx.xx.xx.xx
+GATEWAY=xx.xx.xx.xx
+ONBOOT=yes
+BOOTPROTO=none
+NM_CONTROLLED=no
+DELAY=0
+# cat /etc/sysconfig/network-scripts/ifcfg-eth1 
+TYPE=Ethernet
+DEVICE=eth1
+ONBOOT=yes
+BRIDGE=br1
+# cat /etc/sysconfig/network-scripts/ifcfg-br1 
+DEVICE=br1
+TYPE=Bridge
+BOOTPROTO=none
+ONBOOT=yes
+```
+
 ## 四、MySQL
 
 ### mysqldump
