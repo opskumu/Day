@@ -66,6 +66,8 @@ echo 0 > /proc/sys/vm/swappiness
 
 ### 桥接
 
+* CentOS 
+
 ```
 # cat /etc/sysconfig/network-scripts/ifcfg-eth0 
 DEVICE=eth0
@@ -95,6 +97,29 @@ DEVICE=br1
 TYPE=Bridge
 BOOTPROTO=none
 ONBOOT=yes
+```
+
+* Ubuntu
+
+```
+# cat /etc/network/interfaces
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet manual
+
+auto br0
+iface br0 inet static
+address xx.xx.xx.xx
+netmask xx.xx.xx.xx
+gateway xx.xx.xx.xx
+bridge_ports eth0
+bridge_stp off
+bridge_fd 0
+bridge_maxwait 0
+dns-nameservers xx.xx.xx.xx
+dns-search xxx.com
 ```
 
 ## 四、MySQL
