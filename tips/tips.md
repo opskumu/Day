@@ -122,6 +122,30 @@ dns-nameservers xx.xx.xx.xx
 dns-search xxx.com
 ```
 
+## CentOS 7/RHEL 7
+
+* 主机名配置文件
+    * /etc/hostname
+* ifconfig
+    * yum install net-tools -y
+* eth0
+    * 添加选项 `net.ifnames=0` `biosdevname=0` 到 `/etc/default/grub` 
+    *  grub2-mkconfig -o /boot/grub2/grub.cfg
+    *  mv /etc/sysconfig/network-scripts/{ifcfg-eno16777736,ifcfg-eth0}
+
+```
+# cat /etc/default/grub     
+GRUB_TIMEOUT=5
+GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
+GRUB_DEFAULT=saved
+GRUB_DISABLE_SUBMENU=true
+GRUB_TERMINAL_OUTPUT="console"
+GRUB_CMDLINE_LINUX="vconsole.keymap=us crashkernel=auto  vconsole.font=latarcyrheb-sun16 net.ifnames=0 biosdevname=0 rhgb quiet"
+GRUB_DISABLE_RECOVERY="true"
+# grub2-mkconfig -o /boot/grub2/grub.cfg
+# mv /etc/sysconfig/network-scripts/{ifcfg-eno16777736,ifcfg-eth0}
+```
+
 ## 四、MySQL
 
 ### mysqldump
@@ -166,6 +190,12 @@ ignore-table=mysql.user
 
 ```
 mysqldump --defaults-file=./mydump.cnf  -u $DBUSER -p$DBPWD --all-databases
+```
+
+* 只备份表结构 [--no-data] 选项
+
+```
+mysqldump --no-data --databases ... ...
 ```
 
 ### mysqlbinlog
