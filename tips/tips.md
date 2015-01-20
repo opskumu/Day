@@ -132,7 +132,7 @@ dns-search xxx.com
     * 添加选项 `net.ifnames=0` `biosdevname=0` 到 `/etc/default/grub` 
     * grub2-mkconfig -o /boot/grub2/grub.cfg
     * mv /etc/sysconfig/network-scripts/{ifcfg-eno16777736,ifcfg-eth0}
-    * rebiit
+    * reboot
 
 ```
 # cat /etc/default/grub     
