@@ -130,8 +130,9 @@ dns-search xxx.com
     * yum install net-tools -y
 * eth0
     * 添加选项 `net.ifnames=0` `biosdevname=0` 到 `/etc/default/grub` 
-    *  grub2-mkconfig -o /boot/grub2/grub.cfg
-    *  mv /etc/sysconfig/network-scripts/{ifcfg-eno16777736,ifcfg-eth0}
+    * grub2-mkconfig -o /boot/grub2/grub.cfg
+    * mv /etc/sysconfig/network-scripts/{ifcfg-eno16777736,ifcfg-eth0}
+    * rebiit
 
 ```
 # cat /etc/default/grub     
@@ -144,6 +145,7 @@ GRUB_CMDLINE_LINUX="vconsole.keymap=us crashkernel=auto  vconsole.font=latarcyrh
 GRUB_DISABLE_RECOVERY="true"
 # grub2-mkconfig -o /boot/grub2/grub.cfg
 # mv /etc/sysconfig/network-scripts/{ifcfg-eno16777736,ifcfg-eth0}
+# reboot
 ```
 
 ## 四、MySQL
