@@ -148,6 +148,9 @@ GRUB_DISABLE_RECOVERY="true"
 # reboot
 ```
 
+* diable ipv6
+    * 加入 `ipv6.disable=1` 选项到 `/etc/default/grub` 配置文件中的 `GRUB_CMDLINE_LINUX= ... ` 行中
+
 ## 四、MySQL
 
 ### mysqldump
