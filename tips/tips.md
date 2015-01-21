@@ -299,3 +299,15 @@ server {
     ... ...
 }
 ```
+
+## 六、Other
+
+### jekyll
+
+* {{}} 转义
+
+jekyll 在解析 Markdown 转义的时候会把 {{}} 识别为模板变量，所以需要通过转义解决这个问题：
+
+```
+{% raw %}Hello, my name is {{name}}.{% endraw %}
+```
