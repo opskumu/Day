@@ -6,8 +6,7 @@ import requests
 
 
 def upload_baidu_api_data():
-    """
-    上传单个文件到百度云盘 < 2GB
+    """上传单个文件到百度云盘 < 2GB
     -----------------------------------------------------------------------------
     method              string  是      固定值，upload。
     access_token        string  是      开发者准入标识，HTTPS调用时必须使用。
