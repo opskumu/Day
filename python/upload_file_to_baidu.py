@@ -30,9 +30,7 @@ def upload_baidu_api_data():
 
     print r.status_code, r.json()
 
-def main():
-    upload_baidu_api_data()
 
 if __name__ == '__main__':
     access_token = '你获取的 token (30 天过期)'
-    main()
+    upload_baidu_api_data()
