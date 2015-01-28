@@ -23,6 +23,7 @@
 
 ## 科技人文
 
+* [人件](http://book.douban.com/subject/1108725/)
 * [黑客](http://book.douban.com/subject/6860890/)
 * [重来2](http://book.douban.com/subject/25861795/)
 * [奇点临近](http://book.douban.com/subject/6855803/)
