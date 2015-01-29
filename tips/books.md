@@ -23,6 +23,7 @@
 
 ## 科技人文
 
+* [人件](http://book.douban.com/subject/1108725/)
 * [黑客](http://book.douban.com/subject/6860890/)
 * [重来2](http://book.douban.com/subject/25861795/)
 * [奇点临近](http://book.douban.com/subject/6855803/)
@@ -40,8 +41,8 @@
 
 * [九败一胜](http://book.douban.com/subject/25975454/)
 * [永恒的终结](http://book.douban.com/subject/25829693/)
-* [解忧杂货店](http://book.douban.com/subject/25862578/)....................DONE
-* [追风筝的人](http://book.douban.com/subject/1770782/)......................ING
+* [解忧杂货店](http://book.douban.com/subject/25862578/)
+* [追风筝的人](http://book.douban.com/subject/1770782/)
 * [人生不过如此](http://book.douban.com/subject/1987453/)
 * [如何阅读一本书](http://book.douban.com/subject/1013208/)
 * [如何变得有思想](http://book.douban.com/subject/26268552/)
