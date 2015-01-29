@@ -40,8 +40,8 @@
 
 * [九败一胜](http://book.douban.com/subject/25975454/)
 * [永恒的终结](http://book.douban.com/subject/25829693/)
-* [解忧杂货店](http://book.douban.com/subject/25862578/)
-* [追风筝的人](http://book.douban.com/subject/1770782/)
+* [解忧杂货店](http://book.douban.com/subject/25862578/)....................DONE
+* [追风筝的人](http://book.douban.com/subject/1770782/)......................ING
 * [人生不过如此](http://book.douban.com/subject/1987453/)
 * [如何阅读一本书](http://book.douban.com/subject/1013208/)
 * [如何变得有思想](http://book.douban.com/subject/26268552/)
