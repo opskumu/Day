@@ -26,7 +26,7 @@ def upload_baidu_api_data():
               'path': path}
     with open('本地上传文件路径(包含文件名称)', 'rb') as f:
         files = {'file': f}
-        r = requests.post(url, params = params, files = files)
+        r = requests.post(url, params=params, files=files, verify=False)
 
     print r.status_code, r.json()
 
