@@ -35,14 +35,15 @@
 * [咨询的奥秘](http://book.douban.com/subject/25785829/)
 * [大教堂与集市](http://book.douban.com/subject/25881855/)
 * [写给大家看的设计书](http://book.douban.com/subject/3323633/)
-* [汽车是怎么跑起来的](http://book.douban.com/subject/25761310/)
+* ING [汽车是怎么跑起来的](http://book.douban.com/subject/25761310/)
 
 ## 散文小说历史等
 
 * [九败一胜](http://book.douban.com/subject/25975454/)
-* [永恒的终结](http://book.douban.com/subject/25829693/)
-* [解忧杂货店](http://book.douban.com/subject/25862578/)....................DONE [2015-01-29]
-* [追风筝的人](http://book.douban.com/subject/1770782/).....................DONE [2015-02-05]
+* ING [永恒的终结](http://book.douban.com/subject/25829693/)
+* √ [白垩纪往事](http://book.douban.com/subject/4832901/) [2015-02-23]
+* √ [解忧杂货店](http://book.douban.com/subject/25862578/) [2015-01-29]
+* √ [追风筝的人](http://book.douban.com/subject/1770782/) [2015-02-05]
 * [人生不过如此](http://book.douban.com/subject/1987453/)
 * [如何阅读一本书](http://book.douban.com/subject/1013208/)
 * [如何变得有思想](http://book.douban.com/subject/26268552/)
@@ -50,6 +51,8 @@
 * [我爱这哭不出来的浪漫](http://book.douban.com/subject/25913058/)
 * [你一定爱读的极简欧洲史](http://book.douban.com/subject/5366248/)
 * [周鸿祎:我的互联网方法论](http://book.douban.com/subject/25928983/)
-* [30岁后，为梦想寻找现实的出口](http://book.douban.com/subject/25974698/)
+* ING [30岁后，为梦想寻找现实的出口](http://book.douban.com/subject/25974698/)
+* √ [人生里，总有一段传奇在等你](http://book.douban.com/subject/26257660/) [2015-02-22]
+* √ [每个人都会死，但我总以为自己不会](http://book.douban.com/subject/25718139/) [2015-02-18]
 
 2015 争取读完 50 本书，读完一本书更新相关进度，有些书待增加。
