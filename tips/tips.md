@@ -151,6 +151,68 @@ GRUB_DISABLE_RECOVERY="true"
 * diable ipv6
     * 加入 `ipv6.disable=1` 选项到 `/etc/default/grub` 配置文件中的 `GRUB_CMDLINE_LINUX= ... ` 行中
 
+## 查看超级块信息
+
+* mkfs
+
+```
+# mkfs.ext3 -n /dev/vda1        # 非挂载情况下查看
+mke2fs 1.41.12 (17-May-2010)
+文件系统标签=
+操作系统:Linux
+块大小=1024 (log=0)
+分块大小=1024 (log=0)
+Stride=0 blocks, Stripe width=0 blocks
+51200 inodes, 204800 blocks
+10240 blocks (5.00%) reserved for the super user
+第一个数据块=1
+Maximum filesystem blocks=67371008
+25 block groups
+8192 blocks per group, 8192 fragments per group
+2048 inodes per group
+Superblock backups stored on blocks:
+    8193, 24577, 40961, 57345, 73729
+```
+
+* tune2fs
+
+```
+# tune2fs -l /dev/vda1         # 挂载非挂载情况都可以查看
+tune2fs 1.41.12 (17-May-2010)
+Filesystem volume name:   /boot/
+Last mounted on:          /boot
+Filesystem UUID:          eaa5734f-5937-47d8-b956-e1b186f4bcd1
+Filesystem magic number:  0xEF53
+Filesystem revision #:    1 (dynamic)
+... ...
+```
+
+* dumpe2fs
+
+```
+# dumpe2fs /dev/vda1           # 可以获取更详细的信息
+dumpe2fs 1.41.12 (17-May-2010)
+Filesystem volume name:   /boot/
+Last mounted on:          /boot
+Filesystem UUID:          eaa5734f-5937-47d8-b956-e1b186f4bcd1
+Filesystem magic number:  0xEF53
+Filesystem revision #:    1 (dynamic)
+```
+
+## 文件系统修复
+
+* 强制重启 fsck 文件系统
+
+```
+touch /forcefsck
+echo y > forcefsck
+reboot
+```
+
+__注__: CentOS 5 可以使用 `shutdown -rF now` 强制修复文件系统，但是 CentOS 6 已经失效了，推荐采用上面的方式强制重启修复文件系统
+
+* [How to Check and Repair EXT3/EXT4 Filesystem on Linux](http://www.vmexplore.com/check-repair-ext3-ext4-filesystem-oracle-linux/)
+
 ## 四、MySQL
 
 ### mysqldump
