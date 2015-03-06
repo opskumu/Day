@@ -2,7 +2,7 @@
 
 ## 一、kvm/OpenNebula
 
-* `onehost sync --force` 
+* `onehost sync --force`
     * [OpenNebula host sync](http://docs.opennebula.org/4.10/administration/hosts_and_clusters/host_guide.html#sync)
 * messagebus 服务必须开启，否则添加节点会失败
     * chkconfig messagebus on
@@ -66,10 +66,10 @@ echo 0 > /proc/sys/vm/swappiness
 
 ### 桥接
 
-* CentOS 
+* CentOS
 
 ```
-# cat /etc/sysconfig/network-scripts/ifcfg-eth0 
+# cat /etc/sysconfig/network-scripts/ifcfg-eth0
 DEVICE=eth0
 TYPE=Ethernet
 HWADDR=xx:xx:xx:xx:xx:xx
@@ -77,7 +77,7 @@ BOOTPROTO=none
 ONBOOT=yes
 NM_CONTROLLED=no
 BRIDGE=br0
-# cat /etc/sysconfig/network-scripts/ifcfg-br0 
+# cat /etc/sysconfig/network-scripts/ifcfg-br0
 DEVICE=br0
 TYPE=Bridge
 IPADDR=xx.xx.xx.xx
@@ -87,12 +87,12 @@ ONBOOT=yes
 BOOTPROTO=none
 NM_CONTROLLED=no
 DELAY=0
-# cat /etc/sysconfig/network-scripts/ifcfg-eth1 
+# cat /etc/sysconfig/network-scripts/ifcfg-eth1
 TYPE=Ethernet
 DEVICE=eth1
 ONBOOT=yes
 BRIDGE=br1
-# cat /etc/sysconfig/network-scripts/ifcfg-br1 
+# cat /etc/sysconfig/network-scripts/ifcfg-br1
 DEVICE=br1
 TYPE=Bridge
 BOOTPROTO=none
@@ -122,20 +122,20 @@ dns-nameservers xx.xx.xx.xx
 dns-search xxx.com
 ```
 
-## CentOS 7/RHEL 7
+### CentOS 7/RHEL 7
 
 * 主机名配置文件
     * /etc/hostname
 * ifconfig
     * yum install net-tools -y
 * eth0
-    * 添加选项 `net.ifnames=0` `biosdevname=0` 到 `/etc/default/grub` 
+    * 添加选项 `net.ifnames=0` `biosdevname=0` 到 `/etc/default/grub`
     * grub2-mkconfig -o /boot/grub2/grub.cfg
     * mv /etc/sysconfig/network-scripts/{ifcfg-eno16777736,ifcfg-eth0}
     * reboot
 
 ```
-# cat /etc/default/grub     
+# cat /etc/default/grub
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="$(sed 's, release .*$,,g' /etc/system-release)"
 GRUB_DEFAULT=saved
@@ -151,7 +151,7 @@ GRUB_DISABLE_RECOVERY="true"
 * diable ipv6
     * 加入 `ipv6.disable=1` 选项到 `/etc/default/grub` 配置文件中的 `GRUB_CMDLINE_LINUX= ... ` 行中
 
-## 查看超级块信息
+### 查看超级块信息
 
 * mkfs
 
@@ -199,7 +199,7 @@ Filesystem magic number:  0xEF53
 Filesystem revision #:    1 (dynamic)
 ```
 
-## 文件系统修复
+### 文件系统修复
 
 * 强制重启 fsck 文件系统
 
@@ -212,6 +212,32 @@ reboot
 __注__: CentOS 5 可以使用 `shutdown -rF now` 强制修复文件系统，但是 CentOS 6 已经失效了，推荐采用上面的方式强制重启修复文件系统
 
 * [How to Check and Repair EXT3/EXT4 Filesystem on Linux](http://www.vmexplore.com/check-repair-ext3-ext4-filesystem-oracle-linux/)
+
+### dmidecode && MegaCli
+
+* 查看机器型号                              # dmidecode | grep "Product"
+* 查看厂商                                  # dmidecode| grep  "Manufacturer"
+* 查看序列号                                # dmidecode | grep  "Serial Number"
+* 查看CPU信息                               # dmidecode | grep  "CPU"
+* 查看CPU个数                               # dmidecode | grep  "Socket Designation: CPU" |wc –l
+* 查看出厂日期                              # dmidecode | grep "Date"
+* 查看充电状态                              # MegaCli -AdpBbuCmd -GetBbuStatus -aALL |grep "Charger Status"
+* 显示BBU状态信息                           # MegaCli -AdpBbuCmd -GetBbuStatus –aALL
+* 显示BBU容量信息                           # MegaCli -AdpBbuCmd -GetBbuCapacityInfo –aALL
+* 显示BBU设计参数                           # MegaCli -AdpBbuCmd -GetBbuDesignInfo –aALL
+* 显示当前BBU属性                           # MegaCli -AdpBbuCmd -GetBbuProperties –aALL
+* 查看充电进度百分比                        # MegaCli -AdpBbuCmd -GetBbuStatus -aALL |grep "Relative State of Charge"
+* 查询Raid阵列数                            # MegaCli -cfgdsply -aALL |grep "Number of DISK GROUPS:"
+* 显示Raid卡型号，Raid设置，Disk相关信息    # MegaCli -cfgdsply –aALL
+* 显示所有物理信息                          # MegaCli -PDList -aALL
+* 显示所有逻辑磁盘组信息                    # MegaCli -LDInfo -LALL –aAll
+* 查看物理磁盘重建进度(重要)                # MegaCli -PDRbld -ShowProg -PhysDrv [1:5] -a0
+* 查看适配器个数                            # MegaCli –adpCount
+* 查看适配器时间                            # MegaCli -AdpGetTime –aALL
+* 显示所有适配器信息                        # MegaCli -AdpAllInfo –aAll
+* 查看Cache 策略设置                        # MegaCli -cfgdsply -aALL |grep Polic
+
+更多参考:[DELL磁盘阵列控制卡（RAID卡）MegaCli常用管理命令汇总](http://zh.community.dell.com/techcenter/b/weblog/archive/2013/03/07/megacli-command-share)
 
 ## 四、MySQL
 
