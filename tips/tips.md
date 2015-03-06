@@ -233,13 +233,13 @@ __注__: CentOS 5 可以使用 `shutdown -rF now` 强制修复文件系统，但
 # dmidecode | grep  "Serial Number"
 ```
 
-* 查看CPU信息
+* 查看 CPU 信息
 
 ```
 # dmidecode | grep  "CPU"
 ```
 
-* 查看CPU个数
+* 查看 CPU 个数
 
 ```
 # dmidecode | grep  "Socket Designation: CPU" |wc –l
@@ -257,25 +257,25 @@ __注__: CentOS 5 可以使用 `shutdown -rF now` 强制修复文件系统，但
 # MegaCli -AdpBbuCmd -GetBbuStatus -aALL |grep "Charger Status"
 ```
 
-* 显示BBU状态信息
+* 显示 BBU 状态信息
 
 ```
 # MegaCli -AdpBbuCmd -GetBbuStatus –aALL
 ```
 
-* 显示BBU容量信息
+* 显示 BBU 容量信息
 
 ```
 # MegaCli -AdpBbuCmd -GetBbuCapacityInfo –aALL
 ```
 
-* 显示BBU设计参数
+* 显示 BBU 设计参数
 
 ```
 # MegaCli -AdpBbuCmd -GetBbuDesignInfo –aALL
 ```
 
-* 显示当前BBU属性
+* 显示当前 BBU 属性
 
 ```
 # MegaCli -AdpBbuCmd -GetBbuProperties –aALL
@@ -287,13 +287,13 @@ __注__: CentOS 5 可以使用 `shutdown -rF now` 强制修复文件系统，但
 # MegaCli -AdpBbuCmd -GetBbuStatus -aALL |grep "Relative State of Charge"
 ```
 
-* 查询Raid阵列数
+* 查询 Raid 阵列数
 
 ```
 # MegaCli -cfgdsply -aALL |grep "Number of DISK GROUPS:"
 ```
 
-* 显示Raid卡型号，Raid设置，Disk相关信息
+* 显示 Raid 卡型号，Raid 设置，Disk 相关信息
 
 ```
 # MegaCli -cfgdsply –aALL
