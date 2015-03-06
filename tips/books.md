@@ -12,7 +12,7 @@
 * [MySQL 技术内幕: SQL 编程](http://book.douban.com/subject/10569620/)
 * [MySQL 技术内幕: InnoDB 存储引擎](http://book.douban.com/subject/24708143/)
 * √ [24 小时 365 天不间断服务](http://book.douban.com/subject/26293733/) [2015-03-05]
-    * 日本的技术书，本来想看下，一会就翻完了，文中还有写技术性错误，不推荐阅读
+    * 日本的技术书，本来想看下，一会就翻完了，文中还有些技术性错误，不推荐阅读
 
 ## 心理学
 
