@@ -215,27 +215,131 @@ __注__: CentOS 5 可以使用 `shutdown -rF now` 强制修复文件系统，但
 
 ### dmidecode && MegaCli
 
-* 查看机器型号                              # dmidecode | grep "Product"
-* 查看厂商                                  # dmidecode| grep  "Manufacturer"
-* 查看序列号                                # dmidecode | grep  "Serial Number"
-* 查看CPU信息                               # dmidecode | grep  "CPU"
-* 查看CPU个数                               # dmidecode | grep  "Socket Designation: CPU" |wc –l
-* 查看出厂日期                              # dmidecode | grep "Date"
-* 查看充电状态                              # MegaCli -AdpBbuCmd -GetBbuStatus -aALL |grep "Charger Status"
-* 显示BBU状态信息                           # MegaCli -AdpBbuCmd -GetBbuStatus –aALL
-* 显示BBU容量信息                           # MegaCli -AdpBbuCmd -GetBbuCapacityInfo –aALL
-* 显示BBU设计参数                           # MegaCli -AdpBbuCmd -GetBbuDesignInfo –aALL
-* 显示当前BBU属性                           # MegaCli -AdpBbuCmd -GetBbuProperties –aALL
-* 查看充电进度百分比                        # MegaCli -AdpBbuCmd -GetBbuStatus -aALL |grep "Relative State of Charge"
-* 查询Raid阵列数                            # MegaCli -cfgdsply -aALL |grep "Number of DISK GROUPS:"
-* 显示Raid卡型号，Raid设置，Disk相关信息    # MegaCli -cfgdsply –aALL
-* 显示所有物理信息                          # MegaCli -PDList -aALL
-* 显示所有逻辑磁盘组信息                    # MegaCli -LDInfo -LALL –aAll
-* 查看物理磁盘重建进度(重要)                # MegaCli -PDRbld -ShowProg -PhysDrv [1:5] -a0
-* 查看适配器个数                            # MegaCli –adpCount
-* 查看适配器时间                            # MegaCli -AdpGetTime –aALL
-* 显示所有适配器信息                        # MegaCli -AdpAllInfo –aAll
-* 查看Cache 策略设置                        # MegaCli -cfgdsply -aALL |grep Polic
+* 查看机器型号
+
+```
+# dmidecode | grep "Product"
+```
+
+* 查看厂商
+
+```
+# dmidecode| grep  "Manufacturer"
+```
+
+* 查看序列号
+
+```
+# dmidecode | grep  "Serial Number"
+```
+
+* 查看CPU信息
+
+```
+# dmidecode | grep  "CPU"
+```
+
+* 查看CPU个数
+
+```
+# dmidecode | grep  "Socket Designation: CPU" |wc –l
+```
+
+* 查看出厂日期
+
+```
+# dmidecode | grep "Date"
+```
+
+* 查看充电状态
+
+```
+# MegaCli -AdpBbuCmd -GetBbuStatus -aALL |grep "Charger Status"
+```
+
+* 显示BBU状态信息
+
+```
+# MegaCli -AdpBbuCmd -GetBbuStatus –aALL
+```
+
+* 显示BBU容量信息
+
+```
+# MegaCli -AdpBbuCmd -GetBbuCapacityInfo –aALL
+```
+
+* 显示BBU设计参数
+
+```
+# MegaCli -AdpBbuCmd -GetBbuDesignInfo –aALL
+```
+
+* 显示当前BBU属性
+
+```
+# MegaCli -AdpBbuCmd -GetBbuProperties –aALL
+```
+
+* 查看充电进度百分比
+
+```
+# MegaCli -AdpBbuCmd -GetBbuStatus -aALL |grep "Relative State of Charge"
+```
+
+* 查询Raid阵列数
+
+```
+# MegaCli -cfgdsply -aALL |grep "Number of DISK GROUPS:"
+```
+
+* 显示Raid卡型号，Raid设置，Disk相关信息
+
+```
+# MegaCli -cfgdsply –aALL
+```
+
+* 显示所有物理信息
+
+```
+# MegaCli -PDList -aALL
+```
+
+* 显示所有逻辑磁盘组信息
+
+```
+# MegaCli -LDInfo -LALL –aAll
+```
+
+* 查看物理磁盘重建进度(重要)
+
+```
+# MegaCli -PDRbld -ShowProg -PhysDrv [1:5] -a0
+```
+
+* 查看适配器个数
+
+```
+# MegaCli –adpCount
+```
+
+* 查看适配器时间
+
+```
+# MegaCli -AdpGetTime –aALL
+```
+
+* 显示所有适配器信息
+
+```
+# MegaCli -AdpAllInfo –aAll
+```
+
+* 查看 Cache 策略设置
+
+```
+# MegaCli -cfgdsply -aALL |grep Polic
+```
 
 更多参考:[DELL磁盘阵列控制卡（RAID卡）MegaCli常用管理命令汇总](http://zh.community.dell.com/techcenter/b/weblog/archive/2013/03/07/megacli-command-share)
 
