@@ -11,6 +11,8 @@
 * [Python 网络编程攻略](http://book.douban.com/subject/26230343/)
 * [MySQL 技术内幕: SQL 编程](http://book.douban.com/subject/10569620/)
 * [MySQL 技术内幕: InnoDB 存储引擎](http://book.douban.com/subject/24708143/)
+* √ [24 小时 365 天不间断服务](http://book.douban.com/subject/26293733/) [2015-03-05]
+    * 日本的技术书，本来想看下，一会就翻完了，文中还有写技术性错误，不推荐阅读
 
 ## 心理学
 
@@ -25,7 +27,8 @@
 
 * [人件](http://book.douban.com/subject/1108725/)
 * [黑客](http://book.douban.com/subject/6860890/)
-* [重来2](http://book.douban.com/subject/25861795/)
+* √ [重来2](http://book.douban.com/subject/25861795/) [2015-03-05]
+    * 远程办公，可以一读，还是蛮有意思的
 * [奇点临近](http://book.douban.com/subject/6855803/)
 * [硅谷百年史](http://book.douban.com/subject/25857804/)
 * [上帝掷骰子吗](http://book.douban.com/subject/1467022/)
@@ -42,8 +45,11 @@
 * [九败一胜](http://book.douban.com/subject/25975454/)
 * [永恒的终结](http://book.douban.com/subject/25829693/) ING
 * √ [白垩纪往事](http://book.douban.com/subject/4832901/) [2015-02-23]
+    * 当着小故事看完就好了，大刘的书还是不错的
 * √ [解忧杂货店](http://book.douban.com/subject/25862578/) [2015-01-29]
+    * 作者的逻辑太强了，把所有的故事片段最后汇总在一起，相互关联，妙，推荐
 * √ [追风筝的人](http://book.douban.com/subject/1770782/) [2015-02-05]
+    * 额，出来混迟早要还的，故事性很强，值得一读，电影拍的一般
 * [人生不过如此](http://book.douban.com/subject/1987453/)
 * [如何阅读一本书](http://book.douban.com/subject/1013208/)
 * [如何变得有思想](http://book.douban.com/subject/26268552/)
@@ -53,6 +59,8 @@
 * [周鸿祎:我的互联网方法论](http://book.douban.com/subject/25928983/)
 * [30岁后，为梦想寻找现实的出口](http://book.douban.com/subject/25974698/) ING
 * √ [人生里，总有一段传奇在等你](http://book.douban.com/subject/26257660/) [2015-02-22]
+    * 前面的文章看着还不错，看到后面有点看不下去了，感觉作者后面就各种秀了
 * √ [每个人都会死，但我总以为自己不会](http://book.douban.com/subject/25718139/) [2015-02-18]
+    * 这书看了一遍还是糊里糊涂的，纸质书的排版也很一般，没事的时候翻翻也很不错
 
 2015 争取读完 50 本书，读完一本书更新相关进度，有些书待增加。
