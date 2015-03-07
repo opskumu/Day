@@ -54,10 +54,13 @@
 * [如何阅读一本书](http://book.douban.com/subject/1013208/)
 * [如何变得有思想](http://book.douban.com/subject/26268552/)
 * [一个寻找作者的读者](http://www.ituring.com.cn/book/1432)
+* √ [台湾电影的声音](http://book.douban.com/subject/25812567/) [2015-03-07]
+    * 看这本书是一个意外，图书馆无意中看到了就随手哪来一读，主要对台湾导演的一个采访稿
 * [我爱这哭不出来的浪漫](http://book.douban.com/subject/25913058/)
 * [你一定爱读的极简欧洲史](http://book.douban.com/subject/5366248/)
 * [周鸿祎:我的互联网方法论](http://book.douban.com/subject/25928983/)
-* [30岁后，为梦想寻找现实的出口](http://book.douban.com/subject/25974698/) ING
+* √ [30岁后，为梦想寻找现实的出口](http://book.douban.com/subject/25974698/) [2015-03-07]
+    * 采访稿参差不齐，但是那么多人的故事总有那让你感同身受的，可以一读
 * √ [人生里，总有一段传奇在等你](http://book.douban.com/subject/26257660/) [2015-02-22]
     * 前面的文章看着还不错，看到后面有点看不下去了，感觉作者后面就各种秀了
 * √ [每个人都会死，但我总以为自己不会](http://book.douban.com/subject/25718139/) [2015-02-18]
