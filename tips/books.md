@@ -9,6 +9,8 @@
 * [Redis 设计与实现](http://book.douban.com/subject/25900156/)
 * [Python 自动化运维](http://book.douban.com/subject/26258735/)
 * [Python 网络编程攻略](http://book.douban.com/subject/26230343/)
+* √ [Web 性能权威指南](http://book.douban.com/subject/25856314/) [2015-03-11]
+    * 理论性很强，还不错
 * [MySQL 技术内幕: SQL 编程](http://book.douban.com/subject/10569620/)
 * [MySQL 技术内幕: InnoDB 存储引擎](http://book.douban.com/subject/24708143/)
 * √ [24 小时 365 天不间断服务](http://book.douban.com/subject/26293733/) [2015-03-05]
