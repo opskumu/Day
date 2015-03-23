@@ -18,7 +18,8 @@
 
 ## 心理学
 
-* [异类](http://book.douban.com/subject/25863621/)
+* √ [异类](http://book.douban.com/subject/25863621/) [2015-03-23]
+    * 天时地利人和，机会是留给有准备的人的
 * [影响力](http://book.douban.com/subject/1786387/)
 * [自控力](http://book.douban.com/subject/10786473/)
 * [乌合之众](http://book.douban.com/subject/2256351/)
