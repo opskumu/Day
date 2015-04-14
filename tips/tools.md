@@ -4,8 +4,8 @@
 
 ### 文本编辑
 
-* [vim](http://www.vim.org/download.php)
-* [notepad++](http://notepad-plus-plus.org/)
+* [VIM](http://www.vim.org/download.php)
+* [Notepad++](http://notepad-plus-plus.org/)
 * [Sublime Text](http://www.sublimetext.com/)
 
 ### 版本控制
@@ -24,7 +24,7 @@
 
 ### 快速启动
 
-* [launchy](http://www.launchy.net/)
+* [Launchy](http://www.launchy.net/)
 
 ### gif 动态图
 
@@ -39,7 +39,7 @@
 ### 绘图
 
 * 思维导图
-    * [freemind](http://sourceforge.net/projects/freemind/)
+    * [Freemind](http://sourceforge.net/projects/freemind/)
 * 网络绘图
     * [Visio](https://products.office.com/zh-cn/visio/flowchart-software)
     * [Edraw](https://www.edrawsoft.com/)
