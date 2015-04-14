@@ -5,7 +5,7 @@
 * [代码的未来](http://book.douban.com/subject/24536403/)
 * [Git 权威指南](http://book.douban.com/subject/6526452/)
 * [高性能 MySQL](http://book.douban.com/subject/23008813/)
-* √ [软件开发者路线图](http://book.douban.com/subject/4924164/)
+* √ [软件开发者路线图](http://book.douban.com/subject/4924164/) [2015-04-07]
     * 非常不错的一本书，推荐观看，但是书中的观点还是要自己去实践的，自己目前差距还有点大。
 * [Redis 设计与实现](http://book.douban.com/subject/25900156/)
 * [Python 自动化运维](http://book.douban.com/subject/26258735/)
