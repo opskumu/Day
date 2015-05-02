@@ -21,7 +21,8 @@
 
 * √ [异类](http://book.douban.com/subject/25863621/) [2015-03-23]
     * 天时地利人和，机会是留给有准备的人的
-* [影响力](http://book.douban.com/subject/1786387/)
+* √ [影响力](http://book.douban.com/subject/1786387/) [2015-04-30]
+    * 值得都读几遍，很多生活中感到匪夷所思的现象基本都可以找到答案
 * [自控力](http://book.douban.com/subject/10786473/)
 * [乌合之众](http://book.douban.com/subject/2256351/)
 * [社会心理学](http://book.douban.com/subject/1476651/)
