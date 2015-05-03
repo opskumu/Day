@@ -57,6 +57,8 @@
 * √ [追风筝的人](http://book.douban.com/subject/1770782/) [2015-02-05]
     * 额，出来混迟早要还的，故事性很强，值得一读，电影拍的一般
 * [人生不过如此](http://book.douban.com/subject/1987453/)
+* √ [把时间当作朋友](http://book.douban.com/subject/3609132/) [2015-05-07]
+    * 李笑来的这本书还是非常值得看的，心智的成熟，自我的把控，推荐
 * [如何阅读一本书](http://book.douban.com/subject/1013208/)
 * [如何变得有思想](http://book.douban.com/subject/26268552/)
 * [一个寻找作者的读者](http://www.ituring.com.cn/book/1432)

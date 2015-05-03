@@ -199,6 +199,10 @@ Filesystem magic number:  0xEF53
 Filesystem revision #:    1 (dynamic)
 ```
 
+### 国内 NTP 权威网站
+
+* [ww.pool.ntp.org](http://www.pool.ntp.org/zone/cn)
+
 ### 文件系统修复
 
 * 强制重启 fsck 文件系统
