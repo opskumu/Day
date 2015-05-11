@@ -39,6 +39,8 @@
 * [上帝掷骰子吗](http://book.douban.com/subject/1467022/)
 * [信息简史](http://book.douban.com/subject/25752043/)
 * [技术的本质](http://book.douban.com/subject/25846075/)
+* √ [从0到1](http://book.douban.com/subject/26297606/) [2015-05-12]
+    * 没有之前传的神乎其神，不过总体而言可以一读
 * √ [极客与团队](http://book.douban.com/subject/21372237/) [2015-04-26]
     * 去年已经看了一遍了，今年又看了一遍，很不错的技术管理书
 * [咨询的奥秘](http://book.douban.com/subject/25785829/)
