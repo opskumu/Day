@@ -217,6 +217,11 @@ __注__: CentOS 5 可以使用 `shutdown -rF now` 强制修复文件系统，但
 
 * [How to Check and Repair EXT3/EXT4 Filesystem on Linux](http://www.vmexplore.com/check-repair-ext3-ext4-filesystem-oracle-linux/)
 
+### Linux OOM
+
+*[OOM Control and Notifications](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/sec-memory.html)
+*[OOM Killer value always one less than set](http://unix.stackexchange.com/questions/128013/oom-killer-value-always-one-less-than-set)
+
 ### dmidecode && MegaCli
 
 * 查看机器型号
@@ -346,6 +351,10 @@ __注__: CentOS 5 可以使用 `shutdown -rF now` 强制修复文件系统，但
 ```
 
 更多参考:[DELL磁盘阵列控制卡（RAID卡）MegaCli常用管理命令汇总](http://zh.community.dell.com/techcenter/b/weblog/archive/2013/03/07/megacli-command-share)
+
+### root ulimit
+
+/etc/init.d/ 下 root 用户启动的服务还和 `/etc/sysconfig/init` 相关，默认 nofile `1024`
 
 ## 四、MySQL
 
