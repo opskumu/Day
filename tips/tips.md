@@ -219,8 +219,8 @@ __注__: CentOS 5 可以使用 `shutdown -rF now` 强制修复文件系统，但
 
 ### Linux OOM
 
-*[OOM Control and Notifications](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/sec-memory.html)
-*[OOM Killer value always one less than set](http://unix.stackexchange.com/questions/128013/oom-killer-value-always-one-less-than-set)
+* [OOM Control and Notifications](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/sec-memory.html)
+* [OOM Killer value always one less than set](http://unix.stackexchange.com/questions/128013/oom-killer-value-always-one-less-than-set)
 
 ### dmidecode && MegaCli
 
