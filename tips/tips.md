@@ -356,6 +356,19 @@ __注__: CentOS 5 可以使用 `shutdown -rF now` 强制修复文件系统，但
 
 /etc/init.d/ 下 root 用户启动的服务还和 `/etc/sysconfig/init` 相关，默认 nofile `1024`
 
+### RubyGems
+
+```
+$ gem sources --remove https://rubygems.org/
+$ gem sources -a https://ruby.taobao.org/
+$ gem sources -l
+*** CURRENT SOURCES ***
+
+https://ruby.taobao.org
+# 请确保只有 ruby.taobao.org
+$ gem install rails
+```
+
 ## 四、MySQL
 
 ### mysqldump

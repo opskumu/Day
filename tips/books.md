@@ -43,6 +43,8 @@
     * 没有之前传的神乎其神，不过总体而言可以一读
 * √ [极客与团队](http://book.douban.com/subject/21372237/) [2015-04-26]
     * 去年已经看了一遍了，今年又看了一遍，很不错的技术管理书
+* √ [创业维艰](http://book.douban.com/subject/26306686/) [2015-05-31]
+    * 创业不易，个人觉得比《从 0 到 1》 这本书更具体更有深度
 * [咨询的奥秘](http://book.douban.com/subject/25785829/)
 * [大教堂与集市](http://book.douban.com/subject/25881855/)
 * [写给大家看的设计书](http://book.douban.com/subject/3323633/)
