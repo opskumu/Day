@@ -369,6 +369,14 @@ https://ruby.taobao.org
 $ gem install rails
 ```
 
+### ssh key
+
+* 通过 ssh 公钥获取私钥
+
+```
+sh-keygen -y -f .ssh/id_rsa
+```
+
 ## 四、MySQL
 
 ### mysqldump
