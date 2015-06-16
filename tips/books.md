@@ -23,6 +23,8 @@
     * 天时地利人和，机会是留给有准备的人的
 * √ [影响力](http://book.douban.com/subject/1786387/) [2015-04-30]
     * 值得都读几遍，很多生活中感到匪夷所思的现象基本都可以找到答案
+* √ [禅与摩托车维修艺术](http://book.douban.com/subject/6811366/) [2015-06-15]
+    * 自我斗争，自我解剖
 * [自控力](http://book.douban.com/subject/10786473/)
 * [乌合之众](http://book.douban.com/subject/2256351/)
 * [社会心理学](http://book.douban.com/subject/1476651/)
