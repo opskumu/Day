@@ -3,33 +3,44 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
-
+call vundle#begin()
 " let Vundle manage Vundle
 " required!
 Plugin 'gmarik/vundle'
-filetype plugin indent on
-syntax on
 
 " 安装插件
-Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'hynek/vim-python-pep8-indent'       " Python 插件
+Plugin 'Valloric/YouCompleteMe'             " 代码自动补全功能
 " 退出 insert 模式自动关闭预览
 " let g:ycm_autoclose_preview_window_after_insertion=1
 let g:ycm_autoclose_preview_window_after_completion=1
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'   " solarized 主题
+
+Plugin 'fatih/vim-go'                       " vim go 插件
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+Plugin 'scrooloose/nerdtree'                " vim 目录插件
+map <C-n> :NERDTreeToggle<CR>
+
+call vundle#end()
+filetype plugin indent on
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " 主题配置
 syntax enable
 set background=dark
 colorscheme solarized
 let g:solarized_termcolors=256
+" colorscheme molokai
+" let g:rehash256=1
 
 " syntax enable
 " set background=light
 " colorscheme solarized
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " 基本配置
 " 显示行号
