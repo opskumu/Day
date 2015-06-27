@@ -369,12 +369,25 @@ https://ruby.taobao.org
 $ gem install rails
 ```
 
-### ssh key
+### ssh
 
 * 通过 ssh 私钥获取公钥
 
 ```
 sh-keygen -y -f .ssh/id_rsa
+```
+
+* `~/.ssh/config`
+
+```
+➜  ~  cat ~/.ssh/config
+HOST *
+    Port 22
+    User root
+    controlmaster auto
+    controlPath ~/.ssh/master-%r@%h:%p
+    ServerAliveInterval 30
+    StrictHostKeyChecking no
 ```
 
 ## 四、MySQL
