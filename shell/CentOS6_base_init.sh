@@ -22,7 +22,7 @@ sed -i 's/^NETWORKING_IPV6.*/NETWORKING_IPV6=no/' /etc/sysconfig/network
 
 # ssh
 sed -i 's/^#UseDNS yes$/UseDNS no/' /etc/ssh/sshd_config
-sed -i 's/^X11Forwarding yes$/X11Forwarding yes/' /etc/ssh/sshd_config
+sed -i 's/^X11Forwarding yes$/X11Forwarding no/' /etc/ssh/sshd_config
 sed -i 's/^GSSAPIAuthentication yes$/GSSAPIAuthentication no/' /etc/ssh/sshd_config
 
 # selinux
