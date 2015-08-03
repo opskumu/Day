@@ -47,8 +47,6 @@
     * 去年已经看了一遍了，今年又看了一遍，很不错的技术管理书
 * √ [创业维艰](http://book.douban.com/subject/26306686/) [2015-05-31]
     * 创业不易，个人觉得比《从 0 到 1》 这本书更具体更有深度
-* √ [送你一颗子弹](http://book.douban.com/subject/4238362/) [2015-06-24]
-    * 坦率的刘瑜给你坦率的文字，不错的文集，不过还是觉得李海鹏的 [佛祖在一号线](http://book.douban.com/subject/4238362/) 更胜一筹，一并推荐了
 * [咨询的奥秘](http://book.douban.com/subject/25785829/)
 * [大教堂与集市](http://book.douban.com/subject/25881855/)
 * [写给大家看的设计书](http://book.douban.com/subject/3323633/)
@@ -58,6 +56,8 @@
 
 * [九败一胜](http://book.douban.com/subject/25975454/)
 * [永恒的终结](http://book.douban.com/subject/25829693/) ING
+* √ [送你一颗子弹](http://book.douban.com/subject/4238362/) [2015-06-24]
+    * 坦率的刘瑜给你坦率的文字，不错的文集，不过还是觉得李海鹏的 [佛祖在一号线](http://book.douban.com/subject/4872671/) 更胜一筹，一并推荐了
 * √ [白垩纪往事](http://book.douban.com/subject/4832901/) [2015-02-23]
     * 当着小故事看完就好了，大刘的书还是不错的
 * √ [解忧杂货店](http://book.douban.com/subject/25862578/) [2015-01-29]
