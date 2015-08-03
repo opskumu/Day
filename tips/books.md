@@ -82,3 +82,15 @@
     * 前面的文章看着还不错，看到后面有点看不下去了，感觉作者后面就各种秀了
 * √ [每个人都会死，但我总以为自己不会](http://book.douban.com/subject/25718139/) [2015-02-18]
     * 这书看了一遍还是糊里糊涂的，纸质书的排版也很一般，没事的时候翻翻也很不错
+* √ [玩在当下-再不会玩就老了](https://read.douban.com/ebook/2218222/) [2015-08-03]
+    * 生活实用集，眼花缭乱的信用卡什么的，宅男和屌丝貌似用不上啊
+* √ 盗墓笔记 [2015-07-31]
+    * [盗墓笔记之1：七星鲁王宫](http://book.douban.com/subject/3244665/)
+    * [盗墓笔记2 : 秦岭神树](http://book.douban.com/subject/2057285/)
+    * [盗墓笔记3 : 云顶天宫](http://book.douban.com/subject/2298149/)
+    * [盗墓笔记4 : 蛇沼鬼城](http://book.douban.com/subject/3266344/)
+    * [盗墓笔记5 : 谜海归巢](http://book.douban.com/subject/3800166/)
+    * [盗墓笔记6 : 阴山古楼](http://book.douban.com/subject/4173968/)
+    * [盗墓笔记7 : 邛笼石影](http://book.douban.com/subject/5254315/)
+    * [盗墓笔记8·大结局（上）](http://book.douban.com/subject/6974232/)
+    * [盗墓笔记8·大结局（下）](http://book.douban.com/subject/6974102/)
