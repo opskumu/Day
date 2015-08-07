@@ -53,7 +53,8 @@
 
 ## 散文小说历史等
 
-* [九败一胜](http://book.douban.com/subject/25975454/)
+* [九败一胜](http://book.douban.com/subject/25975454/) [2015-08-06]
+    * 看这类书，偶尔可以刺激下自己
 * [永恒的终结](http://book.douban.com/subject/25829693/) ING
 * √ [送你一颗子弹](http://book.douban.com/subject/4238362/) [2015-06-24]
     * 坦率的刘瑜给你坦率的文字，不错的文集，不过还是觉得李海鹏的 [佛祖在一号线](http://book.douban.com/subject/4872671/) 更胜一筹，一并推荐了
