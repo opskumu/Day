@@ -70,7 +70,7 @@
 * [如何阅读一本书](http://book.douban.com/subject/1013208/)
 * [如何变得有思想](http://book.douban.com/subject/26268552/)
 * [一个寻找作者的读者](http://www.ituring.com.cn/book/1432)
-* √ [岛上书店](http://book.douban.com/subject/26340138/)
+* √ [岛上书店](http://book.douban.com/subject/26340138/)「2015-08-07」
     * 玛雅的形象塑造的太完美了，文艺范十足，故事很喜欢
 * √ [台湾电影的声音](http://book.douban.com/subject/25812567/) [2015-03-07]
     * 看这本书是一个意外，图书馆无意中看到了就随手哪来一读，主要对台湾导演的一个采访稿
