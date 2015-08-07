@@ -53,7 +53,7 @@
 
 ## 散文小说历史等
 
-* [九败一胜](http://book.douban.com/subject/25975454/) [2015-08-06]
+* √ [九败一胜](http://book.douban.com/subject/25975454/) [2015-08-06]
     * 看这类书，偶尔可以刺激下自己
 * [永恒的终结](http://book.douban.com/subject/25829693/) ING
 * √ [送你一颗子弹](http://book.douban.com/subject/4238362/) [2015-06-24]
@@ -75,7 +75,8 @@
 * [我爱这哭不出来的浪漫](http://book.douban.com/subject/25913058/)
 * √ [你一定爱读的极简欧洲史](http://book.douban.com/subject/5366248/) [2015-05-23]
     * 读读史
-* [周鸿祎:我的互联网方法论](http://book.douban.com/subject/25928983/)
+* √ [周鸿祎:我的互联网方法论](http://book.douban.com/subject/25928983/) [2015-? 忘记什么时候看完的了...]
+    * 已经忘记什么时候看完的了，很多内容基本上也忘记了... 惭愧 
 * √ [30岁后，为梦想寻找现实的出口](http://book.douban.com/subject/25974698/) [2015-03-07]
     * 采访稿参差不齐，但是那么多人的故事总有那让你感同身受的，可以一读
 * √ [人生里，总有一段传奇在等你](http://book.douban.com/subject/26257660/) [2015-02-22]
