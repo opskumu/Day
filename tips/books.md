@@ -60,6 +60,14 @@
     * 坦率的刘瑜给你坦率的文字，不错的文集，不过还是觉得李海鹏的 [佛祖在一号线](http://book.douban.com/subject/4872671/) 更胜一筹，一并推荐了
 * √ [白垩纪往事](http://book.douban.com/subject/4832901/) [2015-02-23]
     * 当着小故事看完就好了，大刘的书还是不错的
+* √ [流浪地球](http://book.douban.com/subject/3266609/) [2015-08-14]
+    * 大刘短篇科幻佳作 
+* √ [小通鉴](http://book.douban.com/subject/25741447/) [2015-08-14]
+    * 冯唐解说，业余看看 
+* √ [万物生长](http://book.douban.com/subject/3018339/) [2015-08-16]
+    * 小说比电影有味多了
+* √ [大家小书:三国史话](http://book.douban.com/subject/10605395/)
+    * 偏学术型的三国介绍，还不错 
 * √ [解忧杂货店](http://book.douban.com/subject/25862578/) [2015-01-29]
     * 作者的逻辑太强了，把所有的故事片段最后汇总在一起，相互关联，妙，推荐
 * √ [追风筝的人](http://book.douban.com/subject/1770782/) [2015-02-05]
