@@ -43,12 +43,20 @@
 * 网络绘图
     * [Visio](https://products.office.com/zh-cn/visio/flowchart-software)
     * [Edraw](https://www.edrawsoft.com/)
+* 在线绘图
+    * [processon](https://www.processon.com/)
+    * [mindmeister](https://www.mindmeister.com)
 
 ### 云笔记
 
 * [Evernote](https://www.yinxiang.com/?from=evernote)
 * [为知笔记](http://www.wiz.cn/)
     * Markdown 支持很好
+
+### Fuck GFW
+
+* [蓝灯lantern](https://getlantern.org/)
+* [Goagent](https://github.com/goagent/goagent)
 
 ### 密码管理
 
