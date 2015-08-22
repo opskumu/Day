@@ -16,9 +16,36 @@
 ## 二、git/svn
 
 * git 忽略文件 `.gitignore`
+* [A guide for programming within version control.](https://github.com/thoughtbot/guides/tree/master/protocol/git)
 
 
 ## 三、Linux
+
+* grep
+
+grep 匹配文件差异
+
+```
+ /tmp/test/ cat test1
+9
+10
+a
+b
+c
+ /tmp/test/ cat test2
+6
+9
+10
+c
+x
+y
+z
+ /tmp/test/ grep -F -v -f test1 test2
+6
+x
+y
+z
+```
 
 ### route
 
@@ -201,7 +228,7 @@ Filesystem revision #:    1 (dynamic)
 
 ### 国内 NTP 权威网站
 
-* [ww.pool.ntp.org](http://www.pool.ntp.org/zone/cn)
+* [www.pool.ntp.org](http://www.pool.ntp.org/zone/cn)
 
 ### 文件系统修复
 
@@ -354,7 +381,7 @@ __注__: CentOS 5 可以使用 `shutdown -rF now` 强制修复文件系统，但
 
 ### root ulimit
 
-/etc/init.d/ 下 root 用户启动的服务还和 `/etc/sysconfig/init` 相关，默认 nofile `1024`
+/etc/init.d/ 下 root 用户启动的服务还和 `/etc/sysconfig/init` 相关，默认 nofile `1024`「但是该文件不建议修改，可以考虑使用非 root 用户管理服务或者针对相应服务作修改」
 
 ### RubyGems
 
@@ -539,7 +566,16 @@ server {
 }
 ```
 
-## 六、Other
+## 六、Golang
+
+### go get
+
+* go get
+    * 获取第三方包
+* go get -u all
+    * [update the third package](http://stackoverflow.com/questions/10383498/how-does-go-update-third-party-packages)
+
+## 七、Other
 
 ### jekyll
 
