@@ -47,7 +47,8 @@
 * √ [创业维艰](http://book.douban.com/subject/26306686/) [2015-05-31]
     * 创业不易，个人觉得比《从 0 到 1》 这本书更具体更有深度
 * [咨询的奥秘](http://book.douban.com/subject/25785829/)
-* [大教堂与集市](http://book.douban.com/subject/25881855/)
+* √ [大教堂与集市](http://book.douban.com/subject/25881855/) [2015-08-22]
+    * 很赞的一本书，本书介绍了黑客文化，开发的两种模式，有理有据
 * [写给大家看的设计书](http://book.douban.com/subject/3323633/)
 * [汽车是怎么跑起来的](http://book.douban.com/subject/25761310/) ING
 
