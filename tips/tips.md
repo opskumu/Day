@@ -417,6 +417,10 @@ HOST *
     StrictHostKeyChecking no
 ```
 
+### SysVinit to Systemd Cheatsheet
+
+* [SysVinit to Systemd Cheatsheet](https://fedoraproject.org/wiki/SysVinit_to_Systemd_Cheatsheet)
+
 ## 四、MySQL
 
 ### mysqldump
