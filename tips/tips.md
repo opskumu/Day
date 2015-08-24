@@ -26,13 +26,13 @@
 grep 匹配文件差异
 
 ```
- /tmp/test/ cat test1
+➜  /tmp/test/ cat test1
 9
 10
 a
 b
 c
- /tmp/test/ cat test2
+➜  /tmp/test/ cat test2
 6
 9
 10
@@ -40,7 +40,7 @@ c
 x
 y
 z
- /tmp/test/ grep -F -v -f test1 test2
+➜  /tmp/test/ grep -F -v -f test1 test2
 6
 x
 y
