@@ -26,7 +26,7 @@
 * √ [禅与摩托车维修艺术](http://book.douban.com/subject/6811366/) [2015-06-15]
     * 自我斗争，自我解剖
 * [自控力](http://book.douban.com/subject/10786473/)
-* [乌合之众](http://book.douban.com/subject/2256351/) [2015-09-01]
+* √ [乌合之众](http://book.douban.com/subject/2256351/) [2015-09-01]
     * 群体的劣根性，乌合之众
 * √ [社会心理学](http://book.douban.com/subject/1476651/)
 
