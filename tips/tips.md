@@ -593,6 +593,7 @@ server {
     * 获取第三方包
 * go get -u all
     * [update the third package](http://stackoverflow.com/questions/10383498/how-does-go-update-third-party-packages)
+* [go get](https://github.com/hyper-carrot/go_command_tutorial/blob/master/0.3.md)
 
 ## 七、Other
 
