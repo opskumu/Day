@@ -27,7 +27,7 @@
         * `git branch -r -v`
 * 删除分支 「-D 表强制删除」
     * `git branch -d local-branch-name` 删除本地分支
-    * `git branch -d -r remote-branch-name` 删除远程分支
+    * `git branch -d -r remote-branch-name; git push origin :remote-branch-name` 删除远程分支
 * 查看分支 merge 信息「-r 此处依然生效」
     * `git branch --merged` 已 merge 分支
     * `git branch --no-merged` 未 merge 分支
