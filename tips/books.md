@@ -85,7 +85,7 @@
 * √ [台湾电影的声音](http://book.douban.com/subject/25812567/) [2015-03-07]
     * 看这本书是一个意外，图书馆无意中看到了就随手哪来一读，主要对台湾导演的一个采访稿
 * [我爱这哭不出来的浪漫](http://book.douban.com/subject/25913058/)
-* [民主的细节](http://book.douban.com/subject/3813669/) [2015-09-22]
+* √ [民主的细节](http://book.douban.com/subject/3813669/) [2015-09-22]
     * 中美之间的差距 
 * √ [你一定爱读的极简欧洲史](http://book.douban.com/subject/5366248/) [2015-05-23]
     * 读读史
