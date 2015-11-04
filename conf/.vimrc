@@ -11,6 +11,7 @@ Plugin 'gmarik/vundle'
 " 安装插件
 Plugin 'hynek/vim-python-pep8-indent'       " Python 插件
 Plugin 'Valloric/YouCompleteMe'             " 代码自动补全功能
+
 " 退出 insert 模式自动关闭预览
 " let g:ycm_autoclose_preview_window_after_insertion=1
 let g:ycm_autoclose_preview_window_after_completion=1
@@ -30,11 +31,16 @@ call vundle#end()
 filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+map <C-S-i> :YcmCompleter GoToDeclaration<CR>
+map <C-S-j> :YcmCompleter GoToDefinition<CR>
+map <C-S-h> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+
 " 主题配置
 syntax enable
 set background=dark
 colorscheme solarized
-let g:solarized_termcolors=256
+call togglebg#map("<F5>")
+
 " colorscheme molokai
 " let g:rehash256=1
 
@@ -44,8 +50,8 @@ let g:solarized_termcolors=256
 
 " 基本配置
 " 显示行号
-set rnu
-" set number
+" set rnu
+set number
 " set nonumber
 
 
@@ -76,9 +82,9 @@ set autowrite
 
 set viminfo=""
 
-set list
+" set list
 " 显示TAB成 ">---" 行尾多余的空白成 "-"
-set listchars=tab:>-,trail:-
+" set listchars=tab:>-,trail:-
 
 " 高亮显示所有匹配的地方
 set hlsearch
@@ -86,7 +92,7 @@ set hlsearch
 
 " 设置对齐线和相应颜色
 set colorcolumn=81
-highlight colorcolumn ctermbg=2
+highlight colorcolumn ctermbg=1
 
 set ts=4
 set autoindent shiftwidth=4
