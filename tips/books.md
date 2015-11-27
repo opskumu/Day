@@ -64,7 +64,8 @@
 
 * √ [九败一胜](http://book.douban.com/subject/25975454/) [2015-08-06]
     * 看这类书，偶尔可以刺激下自己
-* [永恒的终结](http://book.douban.com/subject/25829693/) ING
+* √ [永恒的终结](http://book.douban.com/subject/25829693/) [2015-11-20]
+    * 阿西莫夫 50 多年前的作品，现在来看依然非常有想象力，时间旅行
 * √ [送你一颗子弹](http://book.douban.com/subject/4238362/) [2015-06-24]
     * 坦率的刘瑜给你坦率的文字，不错的文集，不过还是觉得李海鹏的 [佛祖在一号线](http://book.douban.com/subject/4872671/) 更胜一筹，一并推荐了
 * √ [白垩纪往事](http://book.douban.com/subject/4832901/) [2015-02-23]
@@ -92,6 +93,8 @@
 * √ [台湾电影的声音](http://book.douban.com/subject/25812567/) [2015-03-07]
     * 看这本书是一个意外，图书馆无意中看到了就随手哪来一读，主要对台湾导演的一个采访稿
 * [我爱这哭不出来的浪漫](http://book.douban.com/subject/25913058/)
+* √ [绝望锻炼了我](http://book.douban.com/subject/24257591/) [2015-11-15]
+    * 政治场上应该是不相信眼泪的，女承父业，割舍和承载的事情太多
 * √ [民主的细节](http://book.douban.com/subject/3813669/) [2015-09-22]
     * 中美之间的差距
 * √ [你一定爱读的极简欧洲史](http://book.douban.com/subject/5366248/) [2015-05-23]
