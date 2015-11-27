@@ -79,11 +79,14 @@
 
 ### 终端连接
 
+* [iterm2](https://www.iterm2.com/)
 * [SecureCRT](http://www.vandyke.com/products/securecrt/)
 
 ### 文本编辑
 
+* [VIM](http://www.vim.org/download.php)
 * [Sublime Text](http://www.sublimetext.com/)
+* [MacDown](http://macdown.uranusjr.com/)
 * [Mou](http://25.io/mou/)
 
 ### 云笔记
@@ -103,3 +106,29 @@
 ### 搜索
 
 * [Alfred](http://www.alfredapp.com/)
+
+### gif 动态图
+
+* [LICEcap](http://www.cockos.com/licecap/)
+
+## 三、Linux
+
+目前工作使用 `linux mint 17.2 Cinnamon`
+
+### 密码管理
+
+* [KeePassX](https://www.keepassx.org/)
+
+### 文本编辑
+
+* [VIM](http://www.vim.org/download.php)
+* [Sublime Text](http://www.sublimetext.com/)
+
+### 终端连接
+
+* [Terminator](http://gnometerminator.blogspot.com/p/introduction.html)
+* [SecureCRT](http://www.vandyke.com/products/securecrt/)
+
+### 远程桌面
+
+* [Remmina](http://remmina.sourceforge.net/)
