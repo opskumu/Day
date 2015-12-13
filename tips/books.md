@@ -2,23 +2,23 @@
 
 ## 技术
 
-* [代码的未来](http://book.douban.com/subject/24536403/)
 * [Git 权威指南](http://book.douban.com/subject/6526452/)
     * 推荐看 [Pro Git](http://book.douban.com/subject/3420144/)，比这本书会好太多的
-* [高性能 MySQL](http://book.douban.com/subject/23008813/)
 * √ [软件开发者路线图](http://book.douban.com/subject/4924164/) [2015-04-07]
     * 非常不错的一本书，推荐观看，但是书中的观点还是要自己去实践的，自己目前差距还有点大
-* [Redis 设计与实现](http://book.douban.com/subject/25900156/)
-* [Python 自动化运维](http://book.douban.com/subject/26258735/)
-* [Python 网络编程攻略](http://book.douban.com/subject/26230343/)
 * √ [Web 性能权威指南](http://book.douban.com/subject/25856314/) [2015-03-11]
     * 理论性很强，还不错
-* [MySQL 技术内幕: SQL 编程](http://book.douban.com/subject/10569620/)
-* [MySQL 技术内幕: InnoDB 存储引擎](http://book.douban.com/subject/24708143/)
 * √ [24 小时 365 天不间断服务](http://book.douban.com/subject/26293733/) [2015-03-05]
     * 日本的技术书，本来想看下，一会就翻完了，文中还有些技术性错误，不推荐阅读
 * √ [PaaS程序设计](http://book.douban.com/subject/26312377/) [2015-09-20]
     * 一本 PaaS 科普类的书,技术方面基本没有讲解
+* [代码的未来](http://book.douban.com/subject/24536403/)
+* [Redis 设计与实现](http://book.douban.com/subject/25900156/)
+* [Python 自动化运维](http://book.douban.com/subject/26258735/)
+* [Python 网络编程攻略](http://book.douban.com/subject/26230343/)
+* [高性能 MySQL](http://book.douban.com/subject/23008813/)
+* [MySQL 技术内幕: SQL 编程](http://book.douban.com/subject/10569620/)
+* [MySQL 技术内幕: InnoDB 存储引擎](http://book.douban.com/subject/24708143/)
 
 ## 哲学、心理学
 
@@ -28,24 +28,19 @@
     * 值得多读几遍，很多生活中感到匪夷所思的现象基本都可以找到答案
 * √ [禅与摩托车维修艺术](http://book.douban.com/subject/6811366/) [2015-06-15]
     * 自我斗争，自我解剖
-* [自控力](http://book.douban.com/subject/10786473/)
 * √ [乌合之众](http://book.douban.com/subject/2256351/) [2015-09-01]
     * 群体的劣根性，乌合之众
-* [社会心理学](http://book.douban.com/subject/1476651/)
 * √ [苏菲的世界](http://book.douban.com/subject/1045818/) [2015-11-11]
-    * 尝试过几次读这本书，基本都是无疾而终。这段时间终于下定决心把这本书看完了，席德 15 岁的时候就可以看这一类型的书了，而现在的我 27 岁才读到这本哲学的启蒙书。书中的故事幽默风趣，写作手法也颇为奇特，从苏格拉底到尼采，看似很轻松的小哲学课，仔细想来又觉得深邃，真痛快。
+    * 尝试过几次读这本书，基本都是无疾而终。这段时间终于下定决心把这本书看完了，席德 15 岁的时候就可以看这一类型的书了，而现在的我 27 岁才读到这本哲学的启蒙书。书中的故事幽默风趣，写作手法也颇为奇特，从苏格拉底到尼采，看似很轻松的小哲学课，仔细想来又觉得深邃，真痛快
+* √ [睡不着：Tango一日一画](http://book.douban.com/subject/25775445/) [2015-11-26]
+    * 不得不承认里面的画太有想象力了，闲下来看的良作
+* [社会心理学](http://book.douban.com/subject/1476651/)
+* [自控力](http://book.douban.com/subject/10786473/)
 
 ## 科技人文
 
-* [人件](http://book.douban.com/subject/1108725/)
-* [黑客](http://book.douban.com/subject/6860890/)
 * √ [重来2](http://book.douban.com/subject/25861795/) [2015-03-05]
     * 远程办公，可以一读，还是蛮有意思的
-* [奇点临近](http://book.douban.com/subject/6855803/)
-* [硅谷百年史](http://book.douban.com/subject/25857804/)
-* [上帝掷骰子吗](http://book.douban.com/subject/1467022/)
-* [信息简史](http://book.douban.com/subject/25752043/)
-* [技术的本质](http://book.douban.com/subject/25846075/)
 * √ [从0到1](http://book.douban.com/subject/26297606/) [2015-05-12]
     * 没有之前传的神乎其神，不过总体而言可以一读
 * √ [高效程序员的45个习惯](http://book.douban.com/subject/4164024/) [2015-11-12]
@@ -54,11 +49,20 @@
     * 去年已经看了一遍了，今年又看了一遍，很不错的技术管理书
 * √ [创业维艰](http://book.douban.com/subject/26306686/) [2015-05-31]
     * 创业不易，个人觉得比《从 0 到 1》 这本书更具体更有深度
-* [咨询的奥秘](http://book.douban.com/subject/25785829/)
 * √ [大教堂与集市](http://book.douban.com/subject/25881855/) [2015-08-22]
     * 很赞的一本书，本书介绍了黑客文化，开发的两种模式，有理有据
+* √ [编程大师访谈录](http://book.douban.com/subject/7007204/) [2015-12-09]
+    * 编程语言可能会更新迭代，但好的思想什么时候都会受用
 * [写给大家看的设计书](http://book.douban.com/subject/3323633/)
-* [汽车是怎么跑起来的](http://book.douban.com/subject/25761310/) ING
+* [汽车是怎么跑起来的](http://book.douban.com/subject/25761310/)
+* [人件](http://book.douban.com/subject/1108725/)
+* [黑客](http://book.douban.com/subject/6860890/)
+* [奇点临近](http://book.douban.com/subject/6855803/)
+* [硅谷百年史](http://book.douban.com/subject/25857804/)
+* [上帝掷骰子吗](http://book.douban.com/subject/1467022/)
+* [信息简史](http://book.douban.com/subject/25752043/)
+* [技术的本质](http://book.douban.com/subject/25846075/)
+* [咨询的奥秘](http://book.douban.com/subject/25785829/)
 
 ## 散文小说历史等
 
@@ -82,17 +86,12 @@
     * 作者的逻辑太强了，把所有的故事片段最后汇总在一起，相互关联，妙，推荐
 * √ [追风筝的人](http://book.douban.com/subject/1770782/) [2015-02-05]
     * 额，出来混迟早要还的，故事性很强，值得一读，电影拍的一般
-* [人生不过如此](http://book.douban.com/subject/1987453/)
 * √ [把时间当作朋友](http://book.douban.com/subject/3609132/) [2015-05-07]
     * 李笑来的这本书还是非常值得看的，心智的成熟，自我的把控，推荐
-* [如何阅读一本书](http://book.douban.com/subject/1013208/)
-* [如何变得有思想](http://book.douban.com/subject/26268552/)
-* [一个寻找作者的读者](http://www.ituring.com.cn/book/1432)
 * √ [岛上书店](http://book.douban.com/subject/26340138/)「2015-08-07」
     * 玛雅的形象塑造的太完美了，文艺范十足，故事很喜欢
 * √ [台湾电影的声音](http://book.douban.com/subject/25812567/) [2015-03-07]
     * 看这本书是一个意外，图书馆无意中看到了就随手哪来一读，主要对台湾导演的一个采访稿
-* [我爱这哭不出来的浪漫](http://book.douban.com/subject/25913058/)
 * √ [绝望锻炼了我](http://book.douban.com/subject/24257591/) [2015-11-15]
     * 政治场上应该是不相信眼泪的，女承父业，割舍和承载的事情太多
 * √ [民主的细节](http://book.douban.com/subject/3813669/) [2015-09-22]
@@ -126,3 +125,7 @@
     * 鬼怪奇谈还是能满足一些好奇心，这种书适可而止。亚马逊赠送的三本，后来读完发现这个系列有 12 本，这类书基本上就是意淫吹逼，果断放弃后面的章节
 * √ [大秦帝国·第一部 黑色裂变（上、下）](http://book.douban.com/subject/1425075/) [2015-10-31]
     * 赳赳老秦，共赴国难!尤其喜欢书中论道的部分，当真是津津有味，战国时候英雄辈出啊，卫鞅、孙膑、孟子、鬼谷子、墨子... ...另外，虽然书中儿女情长的线是虚构的，但是读来也让人好生感触。书还是很长的，后两部以后再看，先搁置一段时间
+* [如何阅读一本书](http://book.douban.com/subject/1013208/)
+* [如何变得有思想](http://book.douban.com/subject/26268552/)
+* [一个寻找作者的读者](http://www.ituring.com.cn/book/1432)
+* [人生不过如此](http://book.douban.com/subject/1987453/)
