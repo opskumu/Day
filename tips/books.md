@@ -12,6 +12,10 @@
     * 日本的技术书，本来想看下，一会就翻完了，文中还有些技术性错误，不推荐阅读
 * √ [PaaS程序设计](http://book.douban.com/subject/26312377/) [2015-09-20]
     * 一本 PaaS 科普类的书,技术方面基本没有讲解
+* √ [Docker in the Trenches](http://book.douban.com/subject/26477632/) [2015-12-15]
+    * 虽然是本英文书，还是花了点时间把它过了一遍，需要再总结下，不错的实战
+* √ [代码整洁之道](http://book.douban.com/subject/4199741/) [2015-12-15]
+    * 基本上算是看完了，这类书看一遍肯定是不够的，不同阶段应该都会有收获，所以还是得多写代码
 * [代码的未来](http://book.douban.com/subject/24536403/)
 * [Redis 设计与实现](http://book.douban.com/subject/25900156/)
 * [Python 自动化运维](http://book.douban.com/subject/26258735/)
