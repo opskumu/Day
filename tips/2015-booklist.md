@@ -16,13 +16,8 @@
     * 虽然是本英文书，还是花了点时间把它过了一遍，需要再总结下，不错的实战
 * √ [代码整洁之道](http://book.douban.com/subject/4199741/) [2015-12-15]
     * 基本上算是看完了，这类书看一遍肯定是不够的，不同阶段应该都会有收获，所以还是得多写代码
-* [代码的未来](http://book.douban.com/subject/24536403/)
-* [Redis 设计与实现](http://book.douban.com/subject/25900156/)
-* [Python 自动化运维](http://book.douban.com/subject/26258735/)
-* [Python 网络编程攻略](http://book.douban.com/subject/26230343/)
-* [高性能 MySQL](http://book.douban.com/subject/23008813/)
-* [MySQL 技术内幕: SQL 编程](http://book.douban.com/subject/10569620/)
-* [MySQL 技术内幕: InnoDB 存储引擎](http://book.douban.com/subject/24708143/)
+* √ [Docker——容器与容器云](http://book.douban.com/subject/26593175/) [2015-12-13]
+    * 讲解很透彻的一本 Docker 书，推荐
 
 ## 哲学、心理学
 
@@ -38,10 +33,8 @@
     * 尝试过几次读这本书，基本都是无疾而终。这段时间终于下定决心把这本书看完了，席德 15 岁的时候就可以看这一类型的书了，而现在的我 27 岁才读到这本哲学的启蒙书。书中的故事幽默风趣，写作手法也颇为奇特，从苏格拉底到尼采，看似很轻松的小哲学课，仔细想来又觉得深邃，真痛快
 * √ [睡不着：Tango一日一画](http://book.douban.com/subject/25775445/) [2015-11-26]
     * 不得不承认里面的画太有想象力了，闲下来看的良作
-* [社会心理学](http://book.douban.com/subject/1476651/)
-* [自控力](http://book.douban.com/subject/10786473/)
 
-## 科技人文
+## 科技、人文
 
 * √ [重来2](http://book.douban.com/subject/25861795/) [2015-03-05]
     * 远程办公，可以一读，还是蛮有意思的
@@ -57,18 +50,8 @@
     * 很赞的一本书，本书介绍了黑客文化，开发的两种模式，有理有据
 * √ [编程大师访谈录](http://book.douban.com/subject/7007204/) [2015-12-09]
     * 编程语言可能会更新迭代，但好的思想什么时候都会受用
-* [写给大家看的设计书](http://book.douban.com/subject/3323633/)
-* [汽车是怎么跑起来的](http://book.douban.com/subject/25761310/)
-* [人件](http://book.douban.com/subject/1108725/)
-* [黑客](http://book.douban.com/subject/6860890/)
-* [奇点临近](http://book.douban.com/subject/6855803/)
-* [硅谷百年史](http://book.douban.com/subject/25857804/)
-* [上帝掷骰子吗](http://book.douban.com/subject/1467022/)
-* [信息简史](http://book.douban.com/subject/25752043/)
-* [技术的本质](http://book.douban.com/subject/25846075/)
-* [咨询的奥秘](http://book.douban.com/subject/25785829/)
 
-## 散文小说历史等
+## 散文、小说、历史等
 
 * √ [九败一胜](http://book.douban.com/subject/25975454/) [2015-08-06]
     * 看这类书，偶尔可以刺激下自己
@@ -114,6 +97,8 @@
     * 生活实用集，眼花缭乱的信用卡什么的，宅男和屌丝貌似用不上啊
 * √ [拆掉思维里的墙-原来我还可以这样活](http://book.douban.com/subject/4953695/)
     * 本来把这本书放在心理学分类的，后来看完后还是放到这一栏，有时候活得累了就换一种姿势，换种思维也不错，没有什么成功学，一步一步跟着感觉走就好了
+* √ [无声告白](http://book.douban.com/subject/26382433/) [2015-09-30]
+    * 夹杂着种族因素的中国式教育悲剧
 * √ 盗墓笔记 [2015-07-31]
     * 这类书闲时看看就可以了，之前网上说电视剧拍的怎么烂怎么烂，引起我的好奇，就直接把书给看完了，书有点长，花了点时间。收获就是消磨时间的小说，电视剧拍的烂，小说本身也不咋滴
     * [盗墓笔记1 : 七星鲁王宫](http://book.douban.com/subject/3244665/)
@@ -129,7 +114,3 @@
     * 鬼怪奇谈还是能满足一些好奇心，这种书适可而止。亚马逊赠送的三本，后来读完发现这个系列有 12 本，这类书基本上就是意淫吹逼，果断放弃后面的章节
 * √ [大秦帝国·第一部 黑色裂变（上、下）](http://book.douban.com/subject/1425075/) [2015-10-31]
     * 赳赳老秦，共赴国难!尤其喜欢书中论道的部分，当真是津津有味，战国时候英雄辈出啊，卫鞅、孙膑、孟子、鬼谷子、墨子... ...另外，虽然书中儿女情长的线是虚构的，但是读来也让人好生感触。书还是很长的，后两部以后再看，先搁置一段时间
-* [如何阅读一本书](http://book.douban.com/subject/1013208/)
-* [如何变得有思想](http://book.douban.com/subject/26268552/)
-* [一个寻找作者的读者](http://www.ituring.com.cn/book/1432)
-* [人生不过如此](http://book.douban.com/subject/1987453/)
