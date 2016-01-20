@@ -62,6 +62,15 @@ y
 z
 ```
 
+* blkid
+
+查看设备 `UUID`
+
+### LVM
+
+* [LVM HOWTO](http://www.tldp.org/HOWTO/LVM-HOWTO/index.html)
+* [LVM (简体中文) ArchLinux](https://wiki.archlinux.org/index.php/LVM_%28%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%29)
+
 ### route
 
 ```
