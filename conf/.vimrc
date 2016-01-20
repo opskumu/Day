@@ -31,9 +31,9 @@ call vundle#end()
 filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-map <C-S-i> :YcmCompleter GoToDeclaration<CR>
-map <C-S-j> :YcmCompleter GoToDefinition<CR>
-map <C-S-h> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+" map <C-S-i> :YcmCompleter GoToDeclaration<CR>
+" map <C-S-j> :YcmCompleter GoToDefinition<CR>
+" map <C-S-h> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " 主题配置
 syntax enable
