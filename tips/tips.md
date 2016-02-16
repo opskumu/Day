@@ -36,6 +36,14 @@
 
 ## 三、Linux
 
+* rpm
+
+查看软件 changelog
+
+```
+rpm -qp --changelog kernel-2.6.32-573.18.1.el6.centos.plus.x86_64.rpm 
+```
+
 * grep
 
 grep 匹配文件差异
