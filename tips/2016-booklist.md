@@ -3,6 +3,8 @@
 ## 技术
 
 * [代码的未来](http://book.douban.com/subject/24536403/)
+* [Web全栈工程师的自我修养](http://book.douban.com/subject/26598045/) [2016-02-09]
+    * 只是针对书的内容来说吧，着实一般。全书技术没说什么，想说道理，可是道理貌似说的也不是很好，倒是推荐了一些不错的书单
 
 ## 哲学、心理学
 
@@ -20,6 +22,10 @@
 * [上帝掷骰子吗](http://book.douban.com/subject/1467022/)
 * [技术的本质](http://book.douban.com/subject/25846075/)
 * [咨询的奥秘](http://book.douban.com/subject/25785829/)
+* [文明之光（第一册）](http://book.douban.com/subject/25902942/) [2016-02-07]
+* [文明之光（第二册）](http://book.douban.com/subject/25902222/) [2016-02-11]
+* [文明之光（第三册）](http://book.douban.com/subject/26275177/) [2016-02-14]
+    * 同《浪潮之巅》，本书依然是读来让人涨姿势，有广度有看点，读完总让人意犹未尽
 
 ## 散文、小说、历史等
 
