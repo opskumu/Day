@@ -74,6 +74,12 @@ z
 
 查看设备 `UUID`
 
+* [Find Out What Process Are Using Swap Space](http://www.cyberciti.biz/faq/linux-which-process-is-using-swap/)
+
+```
+for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less
+```
+
 ### LVM
 
 * [LVM HOWTO](http://www.tldp.org/HOWTO/LVM-HOWTO/index.html)
