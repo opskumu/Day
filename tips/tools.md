@@ -1,5 +1,9 @@
 # 日常使用工具
 
+## 通用工具
+
+* [asciiflow](http://asciiflow.com/)
+
 ## 一、Windows
 
 ### 文本编辑
