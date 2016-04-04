@@ -17,6 +17,35 @@
 
 * git 忽略文件 `.gitignore`
 * [A guide for programming within version control.](https://github.com/thoughtbot/guides/tree/master/protocol/git)
+* git 批量修改提交 user 和 email [修改git已提交的的author和email](http://lmbj.net/blog/how-do-i-change-the-author-of-a-commit-in-git/)
+
+```
+#!/bin/sh
+
+git filter-branch -f --env-filter '
+
+an="$GIT_AUTHOR_NAME"
+am="$GIT_AUTHOR_EMAIL"
+cn="$GIT_COMMITTER_NAME"
+cm="$GIT_COMMITTER_EMAIL"
+
+if [ "$GIT_COMMITTER_EMAIL" = "your@email.to.match" ]
+then
+    cn="Your New Committer Name"
+    cm="Your New Committer Email"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "your@email.to.match" ]
+then
+    an="Your New Author Name"
+    am="Your New Author Email"
+fi
+
+export GIT_AUTHOR_NAME="$an"
+export GIT_AUTHOR_EMAIL="$am"
+export GIT_COMMITTER_NAME="$cn"
+export GIT_COMMITTER_EMAIL="$cm"
+'
+```
 
 ### Git 分支管理
 
@@ -73,6 +102,12 @@ z
 * blkid
 
 查看设备 `UUID`
+
+* [Find Out What Process Are Using Swap Space](http://www.cyberciti.biz/faq/linux-which-process-is-using-swap/)
+
+```
+for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less
+```
 
 ### LVM
 
@@ -538,7 +573,7 @@ mysql> SHOW TABLE STATUS LIKE 'table_name'\G
 ### MySQL 读取配置文件顺序
 
 ```
-$ mysql --help | grep '/etc/my.cnf' # 相同选项以最后一个配置文件选项为主
+$ mysql --help | grep 'my.cnf' # 相同选项以最后一个配置文件选项为主
 /etc/my.cnf /etc/mysql/my.cnf /usr/local/etc/my.cnf ~/.my.cnf
 ```
 
