@@ -70,7 +70,7 @@ export GIT_COMMITTER_EMAIL="$cm"
 查看软件 changelog
 
 ```
-rpm -qp --changelog kernel-2.6.32-573.18.1.el6.centos.plus.x86_64.rpm 
+rpm -qp --changelog kernel-2.6.32-573.18.1.el6.centos.plus.x86_64.rpm
 ```
 
 * grep
@@ -662,3 +662,7 @@ jekyll 在解析 Markdown 转义的时候会把 {{}} 识别为模板变量，所
 ```
 {% raw %}Hello, my name is {{name}}.{% endraw %}
 ```
+
+### wiki
+
+* [wiki.mikejung.biz](https://wiki.mikejung.biz/Main_Page)
