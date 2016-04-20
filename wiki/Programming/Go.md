@@ -133,5 +133,3 @@ func main() {
 ```
 
 根据 defer 的后进先出原则，4 个 defer 语句的执行顺序为倒序的，最后两个属于闭包，很好的理解输出为 3。`defer n.pprint()` 语句因为是指针，所以输出结果依然为 3。`defer n.print()` 为何为 0，这个相对较难理解，根据上文的说明，`var n number` 执行后，n 被初始化为 0，之后 defer 语句就被传入内存的 list 中，因此 `defer n.print()` 输出值为 0。
-
---EOF--
