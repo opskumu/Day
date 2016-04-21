@@ -67,20 +67,20 @@ func main() {
 Go 不能在函数内部显式嵌套定义函数，但是可以定义一个匿名函数，Go 通过匿名函数实现闭包（闭包，通过“捕获”自由变量的绑定对函数文本执行的"闭合"操作）。
 
 ``` go
-package main                                                                     
+package main
 
-import "fmt"                                                                     
+import "fmt"
 
-func f(i int) func() int {                                                       
-    return func() int {                                                          
-        i++                                                                      
-        return i                                                                 
-    }                                                                            
-}                                                                                
+func f(i int) func() int {
+    return func() int {
+        i++
+        return i
+    }
+}
 
-func main() {                                                                    
-    m1 := f(2)                                                                    
-    fmt.Println(m1())    // 指针指向 i, i = 2, 输出 3                                                         
+func main() {
+    m1 := f(2)
+    fmt.Println(m1())    // 指针指向 i, i = 2, 输出 3
     fmt.Println(m1())    // 指针指向 i，i = 3，输出 4
 
     m2 := f(2)
@@ -93,32 +93,32 @@ func main() {
 前段时间在 twitter 看到一个例子，问以下代码应该输出什么，后来分析之后才知道结果，代码如下：
 
 ``` go
-package main                                                                     
+package main
 
-import "fmt"                                                                     
+import "fmt"
 
-type number int                                                                  
+type number int
 
-func (n number) print() {                                                        
-    fmt.Printf("输出 number 值 print: %v\n", n)                                  
-}                                                                                
-func (n *number) pprint() {                                                      
-    fmt.Printf("输出 number 值 pprint: %v\n", *n)                                
-}                                                                                
+func (n number) print() {
+    fmt.Printf("输出 number 值 print: %v\n", n)
+}
+func (n *number) pprint() {
+    fmt.Printf("输出 number 值 pprint: %v\n", *n)
+}
 
 func main() {
-    var n number                                                                 
+    var n number
 
-    defer n.print()                                                              
-    defer n.pprint()                                                             
-    defer func() {                                                               
-        n.print()                                                                
-    }()                                                                          
-    defer func() {                                                               
-        n.pprint()                                                               
-    }()                                                                          
+    defer n.print()
+    defer n.pprint()
+    defer func() {
+        n.print()
+    }()
+    defer func() {
+        n.pprint()
+    }()
 
-    n = 3                                                                        
+    n = 3
 }
 ```
 
