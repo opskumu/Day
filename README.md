@@ -1,7 +1,6 @@
-一些琐碎的梳理
+一些琐碎的梳理 By Kumu
 =====
 
-## 书单
-
-[2015 阅读书单]()
-[2016 阅读书单]()
+* [WIKI](wiki/README.md)
+* [Tips](tips/README.md)
+* [阅读书单](booklist/README.md)
