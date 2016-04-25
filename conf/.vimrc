@@ -1,4 +1,4 @@
-" Vundle 管理配置
+"""""""""""""""""""""""""""""""Vundle 插件管理""""""""""""""""""""""""""""""""""
 set nocompatible               " be iMproved
 filetype off                   " required!
 
@@ -9,51 +9,41 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 
 " 安装插件
-Plugin 'hynek/vim-python-pep8-indent'       " Python 插件
-Plugin 'Valloric/YouCompleteMe'             " 代码自动补全功能
-
-" 退出 insert 模式自动关闭预览
-" let g:ycm_autoclose_preview_window_after_insertion=1
-let g:ycm_autoclose_preview_window_after_completion=1
-Plugin 'altercation/vim-colors-solarized'   " solarized 主题
-
-Plugin 'fatih/vim-go'                       " vim go 插件
+Plugin 'hynek/vim-python-pep8-indent'                   " Python 插件
+Plugin 'Valloric/YouCompleteMe'                         " 代码自动补全功能
+let g:ycm_autoclose_preview_window_after_completion=1   " 完成之后自动关闭预览
+Plugin 'altercation/vim-colors-solarized'               " solarized 主题
+Plugin 'fatih/vim-go'                                   " vim go 插件
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
-Plugin 'scrooloose/nerdtree'                " vim 目录插件
-map <C-n> :NERDTreeToggle<CR>
+Plugin 'scrooloose/nerdtree'                             " vim 目录插件
+map <C-n> :NERDTreeToggle<CR>                            " 设置目录索引快捷键
 
 call vundle#end()
 filetype plugin indent on
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""Vundle 插件管理""""""""""""""""""""""""""""""""""
 
-" map <C-S-i> :YcmCompleter GoToDeclaration<CR>
-" map <C-S-j> :YcmCompleter GoToDefinition<CR>
-" map <C-S-h> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 " 主题配置
+"
 syntax enable
 set background=dark
 colorscheme solarized
-call togglebg#map("<F5>")
-
-" colorscheme molokai
-" let g:rehash256=1
-
-" syntax enable
 " set background=light
 " colorscheme solarized
+call togglebg#map("<F5>")
+
 
 " 基本配置
+"
 " 显示行号
-" set rnu
-set number
+set relativenumber
+" set number
 " set nonumber
-
 
 " 在窗口的右下角显示当前光标的位置
 set ruler
@@ -78,13 +68,11 @@ set showcmd
 set autowrite
 " set noautowrite
 
-" set modelines=10
-
 set viminfo=""
 
-" set list
+set list
 " 显示TAB成 ">---" 行尾多余的空白成 "-"
-" set listchars=tab:>-,trail:-
+set listchars=tab:>-,trail:-
 
 " 高亮显示所有匹配的地方
 set hlsearch
@@ -94,14 +82,17 @@ set hlsearch
 set colorcolumn=81
 highlight colorcolumn ctermbg=1
 
+" 设置 tabspace
 set ts=4
 set autoindent shiftwidth=4
 set expandtab
 set smarttab
+
+" 设置 utf8 编码
 set encoding=utf8
 set fileencodings=utf8
 
-" 修复 BackSpace 键问题
+" 修复 MAC 下 BackSpace 键问题
 set backspace=indent,eol,start
 
 " 新建 py 自动添加标头
