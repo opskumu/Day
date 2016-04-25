@@ -1,4 +1,4 @@
-# 日常使用工具
+# 工具
 
 ## 通用工具
 
@@ -127,6 +127,8 @@
 ### 文本编辑
 
 * [VIM](http://www.vim.org/download.php)
+* [atom](https://atom.io/)
+    * 个人认为最好用的 Markdown 编辑器
 * [Sublime Text](http://www.sublimetext.com/)
 
 ### 终端连接

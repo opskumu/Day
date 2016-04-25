@@ -1,4 +1,4 @@
-# 编程语言 WIKI
+# 编程
 
 * [Go](Go)
 * [Shell](Shell)
