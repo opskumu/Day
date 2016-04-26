@@ -341,7 +341,7 @@ CONTAINER           CPU %               MEM USAGE / LIMIT     MEM %             
 
 测试两个 container，一个设置为 3072，一个设置 1024，CPU 占用如下：
 
-![cpu test](/images/cpu-test.png)
+![cpu test](../images/cpu-test.png)
 
 ### 3.2 CPU period constraint: `--cpu-period` & `--cpu-quota`
 
@@ -512,7 +512,7 @@ root@ffa51b81987c:/# dd if=/dev/zero of=test.out bs=1M count=100 oflag=direct
 
 通过 iotop 获取测试过程中的 bps 也是 1.0 MB 为上限：
 
-![io write bps](/images/io-write-bps.png)
+![io write bps](../images/io-write-bps.png)
 
 读 bps 限制使用方式同写 bps 限制：
 
