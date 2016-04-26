@@ -22,5 +22,5 @@
 
 ### 实践操作
 
-* [Docker MEM、CPU、IO 资源限制](limit/resource-limit.md)
+* [Docker MEM、CPU、IO 资源限制](resource-limit.md)
 * [NET ?]()
