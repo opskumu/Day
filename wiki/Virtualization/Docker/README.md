@@ -4,13 +4,20 @@
 
 ![Docker Overview](images/Overview.png)
 
+* [Docker 官方文档](https://docs.docker.com/)
+
+## Docker Swarm
+
+### Docker Swarm with TLS
+
+* Docker 官方文档
+    * [Overview Swarm with TLS](https://docs.docker.com/swarm/secure-swarm-tls/)
+    * [Configure Docker Swarm for TLS](https://docs.docker.com/swarm/configure-tls/)
+
 ## Docker 资源限制
 
 * 红帽资源管理官方文档
     * [Resource Management Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Resource_Management_Guide/index.html)
-
-### 理论基础
-
 * Linux Cgroup
     * [Docker基础技术：Linux CGroup](http://coolshell.cn/articles/17049.html)
         * From [酷壳 CoolShell](http://coolshell.cn)
@@ -39,8 +46,3 @@
 
 * Docker 官方文档：
     * [Registry as a pull through cache](https://github.com/docker/distribution/blob/master/docs/mirror.md)
-
-### 实践操作
-
-* [Docker Registry 代理缓存仓库]()
-    * 待更新
