@@ -34,3 +34,13 @@
 
 * [Docker 使用 Direct LVM devicemapper 设备](direct-lvm-devicemapper.md)
     * issue: 生产环境应该如何监控 container rootfs size ？
+
+## Docker Distribution(Docker Registry V2)
+
+* Docker 官方文档：
+    * [Registry as a pull through cache](https://github.com/docker/distribution/blob/master/docs/mirror.md)
+
+### 实践操作
+
+* [Docker Registry 代理缓存仓库]()
+    * 待更新
