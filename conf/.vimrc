@@ -33,6 +33,7 @@ filetype plugin indent on
 syntax enable
 set background=dark
 colorscheme solarized
+set t_ut=
 " set background=light
 " colorscheme solarized
 call togglebg#map("<F5>")
@@ -41,8 +42,8 @@ call togglebg#map("<F5>")
 " 基本配置
 "
 " 显示行号
-set relativenumber
-" set number
+" set relativenumber
+set number
 " set nonumber
 
 " 在窗口的右下角显示当前光标的位置
@@ -70,9 +71,9 @@ set autowrite
 
 set viminfo=""
 
-set list
+" set list
 " 显示TAB成 ">---" 行尾多余的空白成 "-"
-set listchars=tab:>-,trail:-
+" set listchars=tab:>-,trail:-
 
 " 高亮显示所有匹配的地方
 set hlsearch
