@@ -33,10 +33,15 @@ filetype plugin indent on
 syntax enable
 set background=dark
 colorscheme solarized
-set t_ut=
 " set background=light
 " colorscheme solarized
 call togglebg#map("<F5>")
+if &term =~ '256color'
+  " disable Background Color Erase (BCE) so that color schemes
+  " render properly when inside 256-color tmux and GNU screen.
+  " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+  set t_ut=
+endif
 
 
 " 基本配置
