@@ -35,6 +35,8 @@
 
 * [如何阅读一本书](http://book.douban.com/subject/1013208/)
 * [人生不过如此](http://book.douban.com/subject/1987453/)
+* [月亮与六便士](https://book.douban.com/subject/1858513/) [2016-05-11]
+    * 不是出走，而是归乡
 * [火星救援](http://book.douban.com/subject/26586492/) [2016-01-05]
     * 技术大拿的火星科学意淫
 * [最璀璨的银河：刘慈欣经典作品集](http://www.duokan.com/book/66020) [2016-02~]

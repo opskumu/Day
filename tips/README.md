@@ -476,7 +476,7 @@ $ gem install rails
 * 通过 ssh 私钥获取公钥
 
 ```
-sh-keygen -y -f .ssh/id_rsa
+ssh-keygen -y -f .ssh/id_rsa
 ```
 
 * `~/.ssh/config`
