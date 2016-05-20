@@ -18,6 +18,7 @@
 * git 忽略文件 `.gitignore`
 * [A guide for programming within version control.](https://github.com/thoughtbot/guides/tree/master/protocol/git)
 * git 批量修改提交 user 和 email [修改git已提交的的author和email](http://lmbj.net/blog/how-do-i-change-the-author-of-a-commit-in-git/)
+* git 删除历史大文件 [Removing files from a repository's history](https://help.github.com/articles/removing-files-from-a-repository-s-history/#platform-linux)
 
 ```
 #!/bin/sh
