@@ -35,6 +35,7 @@ vrrp_instance HA_V1 {
     priority 101		    # keepalived 权重设置
     nopreempt			    # 设置非抢占模式，只有 BACKUP state 生效
     advert_int 1		    # VRRP 监测间隔
+    garp_master_delay 30    # 成为 master 之后二次 arp 广播的时间(s)
     authentication {		# 认证设置
         auth_type PASS
         auth_pass 1111
@@ -83,6 +84,7 @@ vrrp_instance HA_V1 {
     virtual_router_id 89	# VRRP instance 实例唯一标识 ID（取值范围 1~255）
     priority 100		    # keepalived 权重设置
     nopreempt			    # 设置非抢占模式，只有 BACKUP state 生效
+    garp_master_delay 30    # 成为 master 之后二次 arp 广播的时间(s)
     advert_int 1		    # VRRP 监测间隔
     authentication {		# 认证设置
         auth_type PASS
