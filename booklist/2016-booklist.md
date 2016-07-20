@@ -3,6 +3,7 @@
 ## 技术
 
 * [代码的未来](http://book.douban.com/subject/24536403/)
+* [Docker in Practice](https://book.douban.com/subject/26811206/) [2016-06-14]
 * [Web全栈工程师的自我修养](http://book.douban.com/subject/26598045/) [2016-02-09]
     * 只是针对书的内容来说吧，着实一般。全书技术没说什么，想说道理，可是道理貌似说的也不是很好，倒是推荐了一些不错的书单
 * [Learning Docker Networking](https://book.douban.com/subject/26740778/) [2016-04-06]
@@ -15,15 +16,6 @@
 
 ## 科技、人文
 
-* [写给大家看的设计书](http://book.douban.com/subject/3323633/)
-* [汽车是怎么跑起来的](http://book.douban.com/subject/25761310/)
-* [人件](http://book.douban.com/subject/1108725/)
-* [黑客](http://book.douban.com/subject/6860890/)
-* [奇点临近](http://book.douban.com/subject/6855803/)
-* [硅谷百年史](http://book.douban.com/subject/25857804/)
-* [上帝掷骰子吗](http://book.douban.com/subject/1467022/)
-* [技术的本质](http://book.douban.com/subject/25846075/)
-* [咨询的奥秘](http://book.douban.com/subject/25785829/)
 * [文明之光（第一册）](http://book.douban.com/subject/25902942/) [2016-02-07]
 * [文明之光（第二册）](http://book.douban.com/subject/25902222/) [2016-02-11]
 * [文明之光（第三册）](http://book.douban.com/subject/26275177/) [2016-02-14]
@@ -49,6 +41,8 @@
     * 肤色又不仅仅是肤色，有人的地方就会有歧视
 * [白夜行](https://book.douban.com/subject/3259440/) [2016-03-25]
     * 如果人只是为自己而活，那这是个很纯粹简单的事情，可是人偏偏不能只为自己而活
+* [一只特立独行的猪](https://book.douban.com/subject/1767945/) [2016-06-02]
+* [沉默的大多数](https://book.douban.com/subject/1054685/) [2016-07-20]
 
 ### 古龙
 
