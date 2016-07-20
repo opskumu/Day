@@ -8,6 +8,9 @@
     * 只是针对书的内容来说吧，着实一般。全书技术没说什么，想说道理，可是道理貌似说的也不是很好，倒是推荐了一些不错的书单
 * [Learning Docker Networking](https://book.douban.com/subject/26740778/) [2016-04-06]
     * 系统性介绍 Docker 网络解决方案的一本书，偏基础性介绍
+* [Ansible for DevOps: Server and configuration management for humans](https://book.douban.com/subject/26643234/) [2016-05-18]
+    * Anisble 体系化实践的好书
+* [凤凰项目：一个IT运维的传奇故事](https://book.douban.com/subject/26644070/) [2016-05-22]
 
 ## 哲学、心理学
 
@@ -41,6 +44,7 @@
     * 肤色又不仅仅是肤色，有人的地方就会有歧视
 * [白夜行](https://book.douban.com/subject/3259440/) [2016-03-25]
     * 如果人只是为自己而活，那这是个很纯粹简单的事情，可是人偏偏不能只为自己而活
+* [查令十字街84号](https://book.douban.com/subject/1316648/) [2016-05-21]
 * [一只特立独行的猪](https://book.douban.com/subject/1767945/) [2016-06-02]
 * [沉默的大多数](https://book.douban.com/subject/1054685/) [2016-07-20]
 
