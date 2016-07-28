@@ -110,6 +110,19 @@ z
 for file in /proc/*/status ; do awk '/VmSwap|Name/{printf $2 " " $3}END{ print ""}' $file; done | sort -k 2 -n -r | less
 ```
 
+### journalctl
+
+CentOS7 查看日志
+
+```
+# journalctl -f -u sshd                                                             # 动态获取当前服务日志
+-- Logs begin at Mon 2016-05-23 19:12:05 CST. --
+May 23 16:50:08 contiv-1 sshd[7376]: Failed password for root from 192.168.182.1 port 52648 ssh2
+May 23 16:50:10 contiv-1 sshd[7376]: Accepted password for root from 192.168.182.1 port 52648 ssh2
+# journalctl --since "2016-04-20 6:00:00" --until "2016-07-20 7:30:00" -u sshd      # 指定某个时间段的日志
+# journalctl -p err -b                                                              # 只输出类型为错误的日志
+```
+
 ### sed/awk
 
 * sed 批量去除行尾空格和tab
