@@ -27,3 +27,5 @@
 * [Open vSwitch FAQ](https://github.com/openvswitch/ovs/blob/master/FAQ.md)
 
 ## [NTP & chrony suite](ntp-chrony)
+
+## [journald](journald)
