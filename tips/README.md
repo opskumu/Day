@@ -688,7 +688,7 @@ jekyll 在解析 Markdown 转义的时候会把 {{}} 识别为模板变量，所
 ### Docker
 
 * 国内 Docker 加速器
-    * [阿里云Docker加速器](https://help.aliyun.com/knowledge_detail/5974865.html)
+    * [阿里云Docker加速器](https://cr.console.aliyun.com)
     * [DaoCloud](https://dashboard.daocloud.io/mirror)
     * [灵雀云加速](http://docs.alauda.cn/feature/accelerator.html)
 
