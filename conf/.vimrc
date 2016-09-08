@@ -1,17 +1,22 @@
-"""""""""""""""""""""""""""""""Vundle 插件管理""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""Vundle 插件管理"""""""""""""""""""""""""""""""""
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/Vundle.vim/
+set rtp+=~/.vim/bundle/Vundle
 call vundle#begin()
 " let Vundle manage Vundle
 " required!
 Plugin 'gmarik/vundle'
 
 " 安装插件
-Plugin 'hynek/vim-python-pep8-indent'                   " Python 插件
+Plugin 'scrooloose/syntastic'                           " 语法检查
+Plugin 'hynek/vim-python-pep8-indent'                   " Python 缩进插件
+Plugin 'nvie/vim-flake8'
+" Python pep8 风格检查 F7 为快捷键
+" vim-flake8 需安装 flake8 -- pip install flake8
 Plugin 'Valloric/YouCompleteMe'                         " 代码自动补全功能
 let g:ycm_autoclose_preview_window_after_completion=1   " 完成之后自动关闭预览
+nnoremap <leader>gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 Plugin 'altercation/vim-colors-solarized'               " solarized 主题
 Plugin 'fatih/vim-go'                                   " vim go 插件
 let g:go_highlight_functions = 1
@@ -19,13 +24,17 @@ let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+let g:go_autodetect_gopath = 0
 
 Plugin 'scrooloose/nerdtree'                             " vim 目录插件
 map <C-n> :NERDTreeToggle<CR>                            " 设置目录索引快捷键
+let NERDTreeIgnore=['\.pyc$', '\~$']                     " ignore files in NERDTree
+Plugin 'majutsushi/tagbar'                               " tagbar 依赖 ctags 命令
+nmap <F8> :TagbarToggle<CR>
 
 call vundle#end()
 filetype plugin indent on
-"""""""""""""""""""""""""""""""Vundle 插件管理""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""Vundle 插件管理"""""""""""""""""""""""""""""""""
 
 
 " 主题配置
@@ -85,7 +94,7 @@ set hlsearch
 " set nohlsearch
 
 " 设置对齐线和相应颜色
-set colorcolumn=81
+set colorcolumn=79
 highlight colorcolumn ctermbg=1
 
 " 设置 tabspace
