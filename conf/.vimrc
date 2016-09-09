@@ -94,7 +94,7 @@ set hlsearch
 " set nohlsearch
 
 " 设置对齐线和相应颜色
-set colorcolumn=79
+set colorcolumn=80
 highlight colorcolumn ctermbg=1
 
 " 设置 tabspace
