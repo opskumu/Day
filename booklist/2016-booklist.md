@@ -11,6 +11,10 @@
 * [Ansible for DevOps: Server and configuration management for humans](https://book.douban.com/subject/26643234/) [2016-05-18]
     * Anisble 体系化实践的好书
 * [凤凰项目：一个IT运维的传奇故事](https://book.douban.com/subject/26644070/) [2016-05-22]
+    * 墙裂推荐
+* [CentOS 7 Linux Server Cookbook](https://book.douban.com/subject/26729246/) [2016-07-28]
+* [软技能：代码之外的生存指南](https://book.douban.com/subject/26835090/) [2016-08-21]
+* [Kubernetes权威指南](https://book.douban.com/subject/26689184/) [2016-08-29]
 
 ## 哲学、心理学
 
@@ -23,7 +27,7 @@
 * [文明之光（第二册）](http://book.douban.com/subject/25902222/) [2016-02-11]
 * [文明之光（第三册）](http://book.douban.com/subject/26275177/) [2016-02-14]
     * 同《浪潮之巅》，本书依然是读来让人涨姿势，有广度有看点，读完总让人意犹未尽
-* [失乐园](http://book.douban.com/subject/1008074/)
+* [失乐园](http://book.douban.com/subject/1008074/) [2016-02-18]
     * 人性
 
 ## 散文、小说、历史等
@@ -47,6 +51,8 @@
 * [查令十字街84号](https://book.douban.com/subject/1316648/) [2016-05-21]
 * [一只特立独行的猪](https://book.douban.com/subject/1767945/) [2016-06-02]
 * [沉默的大多数](https://book.douban.com/subject/1054685/) [2016-07-20]
+* [日光流年](https://book.douban.com/subject/10484055/) [2016-08-20]
+* [重说中国近代史](https://book.douban.com/subject/10472702/) [2016-09-03]
 
 ### 古龙
 
