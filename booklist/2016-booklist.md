@@ -1,6 +1,6 @@
 # 2016 读书清单
 
-> Migration to [Reading](https://github.com/opskumu/issues/issues/5)
+> Migration to [Books](https://github.com/opskumu/issues/labels/Books)
 
 ## 技术
 
