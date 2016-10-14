@@ -1,5 +1,7 @@
 # 2016 读书清单
 
+> Migration to [Reading](https://github.com/opskumu/issues/issues/5)
+
 ## 技术
 
 * [代码的未来](http://book.douban.com/subject/24536403/)

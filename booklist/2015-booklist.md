@@ -1,5 +1,7 @@
 # 2015 读书清单
 
+> Migration to [Reading](https://github.com/opskumu/issues/issues/5)
+
 ## 技术
 
 * [Git 权威指南](http://book.douban.com/subject/6526452/)
