@@ -120,14 +120,6 @@ function HeaderPython()
     endf
     autocmd bufnewfile *.py call HeaderPython()
 
-" Delete trailing white space on save, useful for Python
-func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
-endfunc
-autocmd BufWrite *.py :call DeleteTrailingWS()
-
 " Tell vim to remember certain things when we exit
 "  '10  :  marks will be remembered for up to 10 previously edited files
 "  "100 :  will save up to 100 lines for each register
