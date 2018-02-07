@@ -501,10 +501,13 @@ ssh-keygen -y -f .ssh/id_rsa
 HOST *
     Port 22
     User root
+    ForwardAgent yes
     controlmaster auto
     controlPath ~/.ssh/master-%r@%h:%p
     ServerAliveInterval 30
     StrictHostKeyChecking no
+    IdentityFile ~/.ssh/id_rsa
+    AddKeysToAgent yes
 ```
 
 ### SysVinit to Systemd Cheatsheet
