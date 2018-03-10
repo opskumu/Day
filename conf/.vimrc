@@ -9,25 +9,47 @@ call vundle#begin()
 Plugin 'gmarik/vundle'
 
 " 安装插件
-Plugin 'scrooloose/syntastic'                           " 语法检查
+Plugin 'vim-airline/vim-airline'                        " 状态栏
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline_theme='papercolor'
+Plugin 'altercation/vim-colors-solarized'               " solarized 主题
+
+Plugin 'vim-syntastic/syntastic'                        " 语法检查
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_wq=1
+let g:syntastic_go_checkers=['golint', 'govet', 'gometalinter']
+let g:syntastic_go_gometalinter_args=['--disable-all', '--enable=golint', '--enable=vet']
+highlight link SyntasticErrorLine ErrorMsg
+highlight link SyntasticWarningLine WarningMsg
+
 Plugin 'hynek/vim-python-pep8-indent'                   " Python 缩进插件
 Plugin 'nvie/vim-flake8'
 " Python pep8 风格检查 F7 为快捷键
 " vim-flake8 需安装 flake8 -- pip install flake8
+
 Plugin 'Valloric/YouCompleteMe'                         " 代码自动补全功能
 let g:ycm_autoclose_preview_window_after_completion=1   " 完成之后自动关闭预览
 let g:ycm_path_to_python_interpreter='/usr/local/var/pyenv/shims/python'
 nnoremap <leader>gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-Plugin 'altercation/vim-colors-solarized'               " solarized 主题
+
 Plugin 'fatih/vim-go'                                   " vim go 插件
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_structs = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
-let g:go_autodetect_gopath = 0
-" format with goimports instead of gofmt
-let g:go_fmt_command = "goimports"
+let g:go_fmt_command="goimports"
+let g:go_autodetect_gopath=1
+let g:go_list_type="quickfix"
+let g:go_highlight_types=1
+let g:go_highlight_fields=1
+let g:go_highlight_functions=1
+let g:go_highlight_methods=1
+let g:go_highlight_extra_types=1
+let g:go_highlight_generate_tags=1
+" conflict with syntastic --> https://github.com/vim-syntastic/syntastic/blob/master/doc/syntastic.txt#L1150
+let g:go_fmt_fail_silently=1
 
 Plugin 'scrooloose/nerdtree'                             " vim 目录插件
 map <C-n> :NERDTreeToggle<CR>                            " 设置目录索引快捷键
@@ -39,7 +61,6 @@ Plugin 'wookiehangover/jshint.vim'
 call vundle#end()
 filetype plugin indent on
 """""""""""""""""""""""""""""""Vundle 插件管理"""""""""""""""""""""""""""""""""
-
 
 " 主题配置
 "
