@@ -13,7 +13,7 @@ Plugin 'vim-airline/vim-airline'                        " 状态栏
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_theme='papercolor'
 Plugin 'altercation/vim-colors-solarized'               " solarized 主题
-
+Plugin 'trevordmiller/nova-vim'                         " nova 主题
 Plugin 'vim-syntastic/syntastic'                        " 语法检查
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -21,12 +21,13 @@ set statusline+=%*
 let g:syntastic_error_symbol='✗'
 let g:syntastic_warning_symbol='⚠'
 let g:syntastic_always_populate_loc_list=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_check_on_wq=1
-let g:syntastic_go_checkers=['golint', 'govet', 'gometalinter']
-let g:syntastic_go_gometalinter_args=['--disable-all', '--enable=golint', '--enable=vet']
-highlight link SyntasticErrorLine ErrorMsg
-highlight link SyntasticWarningLine WarningMsg
+" let g:syntastic_auto_loc_list=1
+" let g:syntastic_check_on_wq=1
+let g:syntastic_go_checkers=['go', 'govet']
+" let g:syntastic_go_gometalinter_args=['--disable-all', '--enable=errcheck']
+" let g:syntastic_auto_jump=1
+highlight link SyntasticErrorLine CursorLine
+highlight link SyntasticWarningLine CursorLine
 
 Plugin 'hynek/vim-python-pep8-indent'                   " Python 缩进插件
 Plugin 'nvie/vim-flake8'
@@ -50,13 +51,17 @@ let g:go_highlight_extra_types=1
 let g:go_highlight_generate_tags=1
 " conflict with syntastic --> https://github.com/vim-syntastic/syntastic/blob/master/doc/syntastic.txt#L1150
 let g:go_fmt_fail_silently=1
+let g:go_def_reuse_buffer=1
 
 Plugin 'scrooloose/nerdtree'                             " vim 目录插件
 map <C-n> :NERDTreeToggle<CR>                            " 设置目录索引快捷键
 let NERDTreeIgnore=['\.pyc$', '\~$']                     " ignore files in NERDTree
 Plugin 'majutsushi/tagbar'                               " tagbar 依赖 ctags 命令
 nmap <F8> :TagbarToggle<CR>
-Plugin 'wookiehangover/jshint.vim'
+
+" brew install fzf the_silver_searcher
+set rtp+=/usr/local/opt/fzf
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -65,11 +70,12 @@ filetype plugin indent on
 " 主题配置
 "
 syntax enable
-set background=dark
-colorscheme solarized
+" set background=dark
 " set background=light
 " colorscheme solarized
-call togglebg#map("<F5>")
+" colorscheme desert
+colorscheme nova
+" call togglebg#map("<F5>")
 if &term =~ '256color'
   " disable Background Color Erase (BCE) so that color schemes
   " render properly when inside 256-color tmux and GNU screen.
@@ -164,3 +170,6 @@ augroup resCur
   autocmd!
   autocmd BufWinEnter * call ResCur()
 augroup END
+
+" Maximum amount of memory (in Kbyte) to use for pattern matching
+set maxmempattern=4000
