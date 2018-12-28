@@ -14,20 +14,17 @@ Plugin 'vim-airline/vim-airline-themes'
 let g:airline_theme='papercolor'
 Plugin 'altercation/vim-colors-solarized'               " solarized 主题
 Plugin 'trevordmiller/nova-vim'                         " nova 主题
-Plugin 'vim-syntastic/syntastic'                        " 语法检查
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
-let g:syntastic_always_populate_loc_list=1
-" let g:syntastic_auto_loc_list=1
-" let g:syntastic_check_on_wq=1
-let g:syntastic_go_checkers=['go', 'govet']
-" let g:syntastic_go_gometalinter_args=['--disable-all', '--enable=errcheck']
-" let g:syntastic_auto_jump=1
-highlight link SyntasticErrorLine CursorLine
-highlight link SyntasticWarningLine CursorLine
+
+Plugin 'w0rp/ale'                                       " 语法检测
+let g:ale_set_loclist=0
+let g:ale_set_quickfix=1
+let g:ale_lint_on_text_changed='never'
+let g:ale_linters={'go': ['go vet']}
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
+Plugin 'pangloss/vim-javascript'                        " javascript
+Plugin 'mxw/vim-jsx'
 
 Plugin 'hynek/vim-python-pep8-indent'                   " Python 缩进插件
 Plugin 'nvie/vim-flake8'
@@ -40,18 +37,22 @@ let g:ycm_path_to_python_interpreter='/usr/local/var/pyenv/shims/python'
 nnoremap <leader>gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
 Plugin 'fatih/vim-go'                                   " vim go 插件
-let g:go_fmt_command="goimports"
+let g:go_fmt_command="goimports"                        " 自动获取依赖加入 import
 let g:go_autodetect_gopath=1
 let g:go_list_type="quickfix"
 let g:go_highlight_types=1
 let g:go_highlight_fields=1
 let g:go_highlight_functions=1
+let g:go_highlight_structs=1
 let g:go_highlight_methods=1
+let g:go_highlight_operators=1
+let g:go_highlight_build_constraints=1
 let g:go_highlight_extra_types=1
 let g:go_highlight_generate_tags=1
-" conflict with syntastic --> https://github.com/vim-syntastic/syntastic/blob/master/doc/syntastic.txt#L1150
-let g:go_fmt_fail_silently=1
 let g:go_def_reuse_buffer=1
+"  conflict with syntastic --> https://github.com/vim-syntastic/syntastic/blob/master/doc/syntastic.txt#L1150
+"  also ale --> https://github.com/w0rp/ale/issues/609
+let g:go_fmt_fail_silently=1
 
 Plugin 'scrooloose/nerdtree'                             " vim 目录插件
 map <C-n> :NERDTreeToggle<CR>                            " 设置目录索引快捷键
