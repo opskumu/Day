@@ -19,7 +19,8 @@ Plugin 'w0rp/ale'                                       " 语法检测
 let g:ale_set_loclist=0
 let g:ale_set_quickfix=1
 let g:ale_lint_on_text_changed='never'
-let g:ale_linters={'go': ['go vet']}
+let g:ale_linters={'go': ['gometalinter']}
+let g:ale_go_gometalinter_options='--fast --disable-all --enable=errcheck --enable=vet'
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
