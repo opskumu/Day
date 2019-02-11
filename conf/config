@@ -1,0 +1,17 @@
+# ssh config
+
+Host github.com
+    User                    git
+    ProxyCommand            nc -X 5 -x 127.0.0.1:1080 %h %p
+
+HOST *
+    Port 22
+    User root
+    ForwardAgent yes
+    ControlMaster auto
+    ControlPersist 600
+    ControlPath ~/.ssh/master-%r@%h:%p
+    ServerAliveInterval 30
+    StrictHostKeyChecking no
+    IdentityFile ~/.ssh/id_rsa
+    AddKeysToAgent yes
