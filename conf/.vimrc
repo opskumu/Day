@@ -22,8 +22,8 @@ let g:ale_set_quickfix=1
 let g:ale_fix_on_save=1
 let g:ale_lint_on_enter=0
 let g:ale_lint_on_text_changed='never'
-let g:ale_linters={'go': ['gometalinter']}
-let g:ale_go_gometalinter_options='--fast --disable-all --enable=errcheck --enable=vet'
+let g:ale_linters={'go': ['golangci-lint']}
+let g:ale_go_golangci_lint_options='--enable-all=false --disable-all=false --enable=errcheck --enable=govet --fast'
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
