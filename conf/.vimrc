@@ -14,6 +14,7 @@ Plugin 'vim-airline/vim-airline-themes'
 let g:airline_theme='papercolor'
 Plugin 'altercation/vim-colors-solarized'               " solarized 主题
 Plugin 'trevordmiller/nova-vim'                         " nova 主题
+Plugin 'NLKNguyen/papercolor-theme'                     " papercolor 主题
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'w0rp/ale'                                       " 语法检测
@@ -23,7 +24,7 @@ let g:ale_fix_on_save=1
 let g:ale_lint_on_enter=0
 let g:ale_lint_on_text_changed='never'
 let g:ale_linters={'go': ['golangci-lint']}
-let g:ale_go_golangci_lint_options='--enable-all=false --disable-all=false --enable=errcheck --enable=govet --fast'
+let g:ale_go_golangci_lint_options='--fast'
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
@@ -54,8 +55,8 @@ let g:go_highlight_build_constraints=1
 let g:go_highlight_extra_types=1
 let g:go_highlight_generate_tags=1
 let g:go_def_reuse_buffer=1
-"  conflict with syntastic --> https://github.com/vim-syntastic/syntastic/blob/master/doc/syntastic.txt#L1150
-"  also ale --> https://github.com/w0rp/ale/issues/609
+" conflict with syntastic --> https://github.com/vim-syntastic/syntastic/blob/master/doc/syntastic.txt#L1150
+" also ale --> https://github.com/w0rp/ale/issues/609
 let g:go_fmt_fail_silently=1
 
 Plugin 'scrooloose/nerdtree'                             " vim 目录插件
@@ -76,10 +77,11 @@ filetype plugin indent on
 "
 syntax enable
 " set background=dark
-" set background=light
+set background=light
 " colorscheme solarized
 " colorscheme desert
-colorscheme nova
+" colorscheme nova
+colorscheme papercolor
 " call togglebg#map("<F5>")
 if &term =~ '256color'
   " disable Background Color Erase (BCE) so that color schemes
@@ -104,7 +106,7 @@ set ruler
 set ignorecase
 " set noignorecase
 
-" 在输入部分查找模式时显示相应的匹配点。
+" 在输入部分查找模式时显示相应的匹配点
 set incsearch
 " set noincsearch
 
@@ -131,7 +133,7 @@ set hlsearch
 
 " 设置对齐线和相应颜色
 set colorcolumn=80
-highlight colorcolumn ctermbg=1
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 
 " 设置 tabspace
 set ts=4
