@@ -1,6 +1,6 @@
 琐碎
 =====
 
-* [Wiki](wiki)
+* [Wiki](https://wiki.opskumu.com)
 * [Tips](tips)
 * [阅读书单](booklist)
