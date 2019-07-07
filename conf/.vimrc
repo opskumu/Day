@@ -116,6 +116,10 @@ set autowrite
 set hlsearch
 " set nohlsearch
 
+" 高亮所在行
+set cursorline
+" set nocursorline 
+
 " 设置对齐线和相应颜色
 set colorcolumn=80
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
