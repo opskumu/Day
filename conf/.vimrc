@@ -1,4 +1,5 @@
 """"""""""""""""""""""""""""""vim-plug 插件管理""""""""""""""""""""""""""""""""
+set nocompatible
 call plug#begin('~/.vim/plugged')
 
 " 安装插件
@@ -12,6 +13,9 @@ let g:airline_theme='papercolor'
 Plug 'altercation/vim-colors-solarized'                 " solarized 主题
 Plug 'trevordmiller/nova-vim'                           " nova 主题
 Plug 'NLKNguyen/papercolor-theme'                       " papercolor 主题
+
+"" 快速跳转
+Plug 'easymotion/vim-easymotion'
 
 " Git 插件
 Plug 'tpope/vim-fugitive'
@@ -36,11 +40,6 @@ let g:ale_go_golangci_lint_options='--fast'
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
-" 补全插件
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer' }
-let g:ycm_autoclose_preview_window_after_completion=1   " 完成之后自动关闭预览
-nnoremap <leader>gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
 " vim-go 插件
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 let g:go_fmt_command="goimports"                      " 自动获取依赖加入 import
@@ -56,12 +55,22 @@ let g:go_highlight_build_constraints=1
 let g:go_highlight_extra_types=1
 let g:go_highlight_generate_tags=1
 let g:go_def_reuse_buffer=1
+let g:go_auto_sameids=1
 " conflict with syntastic --> https://github.com/vim-syntastic/syntastic/blob/master/doc/syntastic.txt#L1150
 " also ale --> https://github.com/w0rp/ale/issues/609
 let g:go_fmt_fail_silently=1
 
+" 补全插件
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer' }
+let g:ycm_show_diagnostics_ui=0                         " diagnostic 相关都是关闭 YCM 语法检测
+let g:ycm_enable_diagnostic_signs=0
+let g:ycm_enable_diagnostic_highlighting=0
+let g:ycm_echo_current_diagnostic=0
+let g:ycm_autoclose_preview_window_after_completion=1   " 完成之后自动关闭预览
+
 " fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 """"""""""""""""""""""""""""""vim-Plug 插件管理""""""""""""""""""""""""""""""""
@@ -73,7 +82,7 @@ syntax enable
 set background=light
 " colorscheme solarized
 " colorscheme nova
-colorscheme papercolor
+colorscheme papercolor 
 call togglebg#map("<F5>")
 if &term =~ '256color'
   " disable Background Color Erase (BCE) so that color schemes
@@ -88,6 +97,9 @@ endif
 " set relativenumber
 set number
 " set nonumber
+
+" 保留 undo
+set hidden
 
 " 在窗口的右下角显示当前光标的位置
 set ruler
