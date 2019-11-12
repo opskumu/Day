@@ -65,16 +65,15 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " 语法检测
-Plug 'vim-syntastic/syntastic'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
-let g:syntastic_always_populate_loc_list=1
-let g:syntastic_go_checkers=['go', 'govet', 'errcheck']
-highlight link SyntasticErrorLine CursorLine
-highlight link SyntasticWarningLine CursorLine
+Plug 'dense-analysis/ale'
+let g:ale_set_loclist=0
+let g:ale_set_quickfix=1
+let g:ale_fix_on_save=1
+let g:ale_lint_on_enter=0
+let g:ale_lint_on_text_changed='never'
+let g:ale_linters={'go': ['gosimple', 'govet', 'staticcheck']}
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 call plug#end()
 """"""""""""""""""""""""""""""vim-Plug 插件管理""""""""""""""""""""""""""""""""
