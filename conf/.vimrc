@@ -8,10 +8,10 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline_theme='papercolor'
-let g:airline#extensions#tabline#enabled=1
-" buffers switch 键映射
-nnoremap <Tab> :bnext<CR>
-nnoremap <S-Tab> :bprevious<CR>
+" let g:airline#extensions#tabline#enabled=1
+"" buffers switch 键映射
+" nnoremap <Tab> :bnext<CR>
+" nnoremap <S-Tab> :bprevious<CR>
 
 " vim 主题
 Plug 'altercation/vim-colors-solarized'                 " solarized 主题
@@ -47,7 +47,7 @@ let g:go_highlight_build_constraints=1
 let g:go_highlight_extra_types=1
 let g:go_highlight_generate_tags=1
 let g:go_def_reuse_buffer=1
-let g:go_auto_sameids=1
+" let g:go_auto_sameids=1
 " conflict with syntastic --> https://github.com/vim-syntastic/syntastic/blob/master/doc/syntastic.txt#L1150
 " also ale --> https://github.com/w0rp/ale/issues/609
 let g:go_fmt_fail_silently=1
@@ -70,8 +70,10 @@ let g:ale_set_loclist=0
 let g:ale_set_quickfix=1
 let g:ale_fix_on_save=1
 let g:ale_lint_on_enter=0
+let g:ale_lint_on_insert_leave=0
 let g:ale_lint_on_text_changed='never'
-let g:ale_linters={'go': ['gosimple', 'govet', 'staticcheck']}
+let g:ale_linters={'go': ['go vet', 'golangci-lint']}
+let g:ale_go_golangci_lint_options='--fast'
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
