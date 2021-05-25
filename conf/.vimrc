@@ -78,6 +78,11 @@ let g:ale_go_golangci_lint_options='--fast'
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
+" ansible syntax
+Plug 'pearofducks/ansible-vim'
+
+Plug 'google/vim-jsonnet'
+
 call plug#end()
 """"""""""""""""""""""""""""""vim-Plug 插件管理""""""""""""""""""""""""""""""""
 
