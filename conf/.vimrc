@@ -53,13 +53,14 @@ let g:go_def_reuse_buffer=1
 let g:go_fmt_fail_silently=1
 
 " 补全插件
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer' }
-let g:ycm_show_diagnostics_ui=0                         " diagnostic 相关都是关闭 YCM 语法检测
-let g:ycm_enable_diagnostic_signs=0
-let g:ycm_enable_diagnostic_highlighting=0
-let g:ycm_echo_current_diagnostic=0
-let g:ycm_auto_hover=''
-let g:ycm_autoclose_preview_window_after_completion=1   " 完成之后自动关闭预览
+" Plug 'Valloric/YouCompleteMe', { 'do': 'python3 ./install.py --go-completer' }
+" let g:ycm_show_diagnostics_ui=0                         " diagnostic 相关都是关闭 YCM 语法检测
+" let g:ycm_enable_diagnostic_signs=0
+" let g:ycm_enable_diagnostic_highlighting=0
+" let g:ycm_echo_current_diagnostic=0
+" let g:ycm_auto_hover=''
+" let g:ycm_autoclose_preview_window_after_completion=1   " 完成之后自动关闭预览
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " fzf
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -73,7 +74,7 @@ let g:ale_fix_on_save=1
 let g:ale_lint_on_enter=0
 let g:ale_lint_on_insert_leave=0
 let g:ale_lint_on_text_changed='never'
-let g:ale_linters={'go': ['go vet', 'golangci-lint']}
+let g:ale_linters={'go': ['golangci-lint']}
 let g:ale_go_golangci_lint_options='--fast'
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
@@ -166,7 +167,9 @@ set backspace=indent,eol,start
 "  :20  :  up to 20 lines of command-line history will be remembered
 "  %    :  saves and restores the buffer list
 "  n... :  where to save the viminfo files
-set viminfo='10,\"100,:20,%,n~/.viminfo
+if !has('nvim')
+  set viminfo='10,\"100,:20,%,n~/.viminfo
+endif
 
 function! ResCur()
   if line("'\"") <= line("$")
