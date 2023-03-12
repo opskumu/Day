@@ -75,7 +75,13 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " ansible syntax
 Plug 'pearofducks/ansible-vim'
 
+" json
 Plug 'google/vim-jsonnet'
+
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" 错误显示
+Plug 'folke/trouble.nvim'
 
 call plug#end()
 """"""""""""""""""""""""""""""vim-Plug 插件管理""""""""""""""""""""""""""""""""
@@ -178,3 +184,30 @@ augroup END
 
 " Maximum amount of memory (in Kbyte) to use for pattern matching
 set maxmempattern=4000
+
+" lua
+lua <<EOF
+  require"trouble".setup {
+    mode = "quickfix",
+    icons = false,
+    fold_open = "v", -- icon used for open folds
+    fold_closed = ">", -- icon used for closed folds
+    indent_lines = false, -- add an indent guide below the fold icons
+    signs = {
+        -- icons / text used for a diagnostic
+        error = "E",
+        warning = "W",
+        hint = "H",
+        information = "I"
+    },
+    use_diagnostic_signs = false -- enabling this will use the signs defined in your lsp client
+  }
+EOF
+
+lua <<EOF
+  require'nvim-treesitter.configs'.setup {
+    highlight = {
+      enable = true,
+    },
+  }
+EOF
