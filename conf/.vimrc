@@ -9,24 +9,29 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 let g:airline_theme='papercolor'
 " let g:airline#extensions#tabline#enabled=1
-"" buffers switch 键映射
+" buffers switch 键映射
 " nnoremap <Tab> :bnext<CR>
 " nnoremap <S-Tab> :bprevious<CR>
 
 " vim 主题
-Plug 'altercation/vim-colors-solarized'                 " solarized 主题
-Plug 'trevordmiller/nova-vim'                           " nova 主题
-Plug 'NLKNguyen/papercolor-theme'                       " papercolor 主题
+Plug 'altercation/vim-colors-solarized'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'cocopon/iceberg.vim'
+Plug 'sainnhe/edge'
 
-"" 快速跳转
+" 快速跳转
 Plug 'easymotion/vim-easymotion'
+
+" codeium
+Plug 'Exafunction/codeium.vim'
 
 " Git 插件
 Plug 'tpope/vim-fugitive'
 
 " vim 目录插件
 Plug 'scrooloose/nerdtree'
-map <C-n> :NERDTreeToggle<CR>                           " 设置目录索引快捷键
+" 设置目录索引快捷键
+map <C-n> :NERDTreeToggle<CR>                           
 
 " tagbar 依赖 `ctags`
 Plug 'majutsushi/tagbar'
@@ -34,18 +39,22 @@ nmap <F8> :TagbarToggle<CR>
 
 " vim-go 插件
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-let g:go_fmt_command="goimports"                      " 自动获取依赖加入 import
+" 自动获取依赖加入 import
+let g:go_fmt_command="goimports"
 let g:go_autodetect_gopath=1
 let g:go_list_type="quickfix"
 let g:go_highlight_types=1
 let g:go_highlight_fields=1
 let g:go_highlight_functions=1
+let g:go_highlight_function_calls=1
 let g:go_highlight_structs=1
 let g:go_highlight_methods=1
 let g:go_highlight_operators=1
 let g:go_highlight_build_constraints=1
 let g:go_highlight_extra_types=1
 let g:go_highlight_generate_tags=1
+let g:go_highlight_variable_declarations=1
+let g:go_highlight_variable_assignments=1
 let g:go_def_reuse_buffer=1
 " let g:go_auto_sameids=1
 " conflict with syntastic --> https://github.com/vim-syntastic/syntastic/blob/master/doc/syntastic.txt#L1150
@@ -78,8 +87,6 @@ Plug 'pearofducks/ansible-vim'
 " json
 Plug 'google/vim-jsonnet'
 
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-
 " 错误显示
 Plug 'folke/trouble.nvim'
 
@@ -91,9 +98,11 @@ call plug#end()
 syntax enable
 " set background=dark
 set background=light
+set t_Co=256
 " colorscheme solarized
-" colorscheme nova
-colorscheme papercolor 
+" colorscheme papercolor
+" colorscheme iceberg
+colorscheme edge
 call togglebg#map("<F5>")
 if &term =~ '256color'
   " disable Background Color Erase (BCE) so that color schemes
@@ -201,13 +210,5 @@ lua <<EOF
         information = "I"
     },
     use_diagnostic_signs = false -- enabling this will use the signs defined in your lsp client
-  }
-EOF
-
-lua <<EOF
-  require'nvim-treesitter.configs'.setup {
-    highlight = {
-      enable = true,
-    },
   }
 EOF
