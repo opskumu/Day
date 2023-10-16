@@ -8,6 +8,5 @@
     }
   },
   "suggest.noselect": false,
-  "diagnostic.displayByAle": true,
-  "suggest.floatEnable": true
+  "diagnostic.displayByAle": true
 }

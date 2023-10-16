@@ -24,6 +24,8 @@ Plug 'easymotion/vim-easymotion'
 
 " codeium
 Plug 'Exafunction/codeium.vim'
+" 默认关闭
+let g:codeium_enabled = v:false
 
 " Git 插件
 Plug 'tpope/vim-fugitive'
@@ -32,6 +34,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
 " 设置目录索引快捷键
 map <C-n> :NERDTreeToggle<CR>                           
+
+Plug 'ryanoasis/vim-devicons'
 
 " tagbar 依赖 `ctags`
 Plug 'majutsushi/tagbar'
@@ -61,6 +65,9 @@ let g:go_def_reuse_buffer=1
 " also ale --> https://github.com/w0rp/ale/issues/609
 let g:go_fmt_fail_silently=1
 
+" delve debug
+Plug 'sebdah/vim-delve'
+
 " 补全插件
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -88,7 +95,11 @@ Plug 'pearofducks/ansible-vim'
 Plug 'google/vim-jsonnet'
 
 " 错误显示
-Plug 'folke/trouble.nvim'
+if has('nvim')
+    Plug 'folke/trouble.nvim'
+    Plug 'nvim-treesitter/nvim-treesitter'
+    Plug 'sindrets/diffview.nvim'
+endif
 
 call plug#end()
 """"""""""""""""""""""""""""""vim-Plug 插件管理""""""""""""""""""""""""""""""""
@@ -96,13 +107,13 @@ call plug#end()
 " 主题配置
 "
 syntax enable
-" set background=dark
-set background=light
 set t_Co=256
+set background=dark
 " colorscheme solarized
 " colorscheme papercolor
 " colorscheme iceberg
 colorscheme edge
+
 call togglebg#map("<F5>")
 if &term =~ '256color'
   " disable Background Color Erase (BCE) so that color schemes
@@ -180,35 +191,16 @@ if !has('nvim')
 endif
 
 function! ResCur()
-  if line("'\"") <= line("$")
-    normal! g`"
-    return 1
-  endif
+    if line("'\"") <= line("$")
+        normal! g`"
+        return 1
+    endif
 endfunction
 
 augroup resCur
-  autocmd!
-  autocmd BufWinEnter * call ResCur()
+    autocmd!
+    autocmd BufWinEnter * call ResCur()
 augroup END
 
 " Maximum amount of memory (in Kbyte) to use for pattern matching
 set maxmempattern=4000
-
-" lua
-lua <<EOF
-  require"trouble".setup {
-    mode = "quickfix",
-    icons = false,
-    fold_open = "v", -- icon used for open folds
-    fold_closed = ">", -- icon used for closed folds
-    indent_lines = false, -- add an indent guide below the fold icons
-    signs = {
-        -- icons / text used for a diagnostic
-        error = "E",
-        warning = "W",
-        hint = "H",
-        information = "I"
-    },
-    use_diagnostic_signs = false -- enabling this will use the signs defined in your lsp client
-  }
-EOF
