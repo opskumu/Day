@@ -84,15 +84,33 @@ let g:ale_lint_on_enter=0
 let g:ale_lint_on_insert_leave=0
 let g:ale_lint_on_text_changed='never'
 let g:ale_linters={'go': ['golangci-lint']}
+let g:ale_go_golangci_lint_package=1
 let g:ale_go_golangci_lint_options='--fast'
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
-" ansible syntax
-Plug 'pearofducks/ansible-vim'
-
 " json
 Plug 'google/vim-jsonnet'
+
+" terraform
+Plug 'hashivim/vim-terraform'
+
+" helm
+Plug 'towolf/vim-helm'
+
+" ansible
+Plug 'pearofducks/ansible-vim'
+
+" beancount
+Plug 'nathangrigg/vim-beancount'
+
+" Add maktaba and codefmt to the runtimepath.
+" (The latter must be installed before it can be used.)
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+" Also add Glaive, which is used to configure codefmt's maktaba flags. See
+" `:help :Glaive` for usage.
+Plug 'google/vim-glaive'
 
 " 错误显示
 if has('nvim')
